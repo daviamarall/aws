@@ -11,18 +11,18 @@ aws s3 sync <diretório_origem> <destino>```
 
 ### Lambda - AWS Lambda
 ```aws lambda create-function
-aws lambda invoke --function-name <nome_função> --payload '<payload>' <arquivo_saida>````
+aws lambda invoke --function-name <nome_função> --payload '<payload>' <arquivo_saida>```
 
 ### RDS - Amazon Relational Database Service
-`aws rds describe-db-instances`
-`aws rds create-db-instance`
+```aws rds describe-db-instances
+aws rds create-db-instance```
 
 ### DynamoDB - Amazon DynamoDB
-`aws dynamodb create-table`
-`aws dynamodb put-item --table-name <nome_tabela> --item '<item_json>'`
+```aws dynamodb create-table
+aws dynamodb put-item --table-name <nome_tabela> --item '<item_json>'```
 
 ### CloudFormation - AWS CloudFormation
-`aws cloudformation create-stack --stack-name <nome_pilha> --template-body file://<caminho_arquivo_template>`
+aws cloudformation create-stack --stack-name <nome_pilha> --template-body file://<caminho_arquivo_template>`
 `aws cloudformation describe-stacks`
 
 ### ECS - Amazon Elastic Container Service
