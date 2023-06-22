@@ -5,13 +5,13 @@
 `aws ec2 describe-instances`
 
 ### S3 - Amazon Simple Storage Service
-`aws s3 ls`
-`aws s3 cp <arquivo_origem> <destino>`
-`aws s3 sync <diretório_origem> <destino>`
+```aws s3 ls
+aws s3 cp <arquivo_origem> <destino>`
+aws s3 sync <diretório_origem> <destino>```
 
 ### Lambda - AWS Lambda
-`aws lambda create-function`
-`aws lambda invoke --function-name <nome_função> --payload '<payload>' <arquivo_saida>`
+```aws lambda create-function
+aws lambda invoke --function-name <nome_função> --payload '<payload>' <arquivo_saida>````
 
 ### RDS - Amazon Relational Database Service
 `aws rds describe-db-instances`
