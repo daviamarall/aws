@@ -1,14 +1,6 @@
 # AWS Cloud Practitioner
 
-Este repositório é uma compilação das anotações que eu fiz enquanto fazia um curso da Udemy para a prova de certificação **CLF-C01 Cloud Practitioner**.
-Nele estão contempladas informações relacionadas a serviços, políticas e processos da AWS que provavelmente cairão na prova de certificação.
-O objetivo deste repositório não é funcionar como um curso ou tutorial sobre AWS, mas apenas como guia adicional para quem estiver buscando obter uma certificação CLF-C01, utilize-o para buscar uma definição mais simples e rápida de termos que você já tenha aprendido e que esteja com dificuldades para lembrar.
-
-O curso que eu fiz para criar estas anotações foi o [Ultimate AWS Certified Cloud Practitioner](https://www.udemy.com/course/aws-certified-cloud-practitioner-new/) criado pelo **Stephane Maarek**.
-
-Para facilitar o cruzamento de dados e informações ao longo da leitura, cada nome de produto funcionará como um verbete que será um link para algum artigo(oficial ou não) que dará mais detalhes sobre aquele produto/serviço/política.
-
-## 6 Vantagens do uso de Cloud Computing
+## Vantagens do uso de Cloud Computing
 
 1. Você Troca CAPEX(Capital Expense) por OPEX(Operational Expense) - Significa que você não se preocupa mais com o hardware, apenas com as questões operacionais da sua aplicação.
 2. Benefícios de enormes economias de escala. - Significa que teu gasto está totalmente adaptado ao teu consumo, não existe ociosidade, nem sobrecarregamento.
