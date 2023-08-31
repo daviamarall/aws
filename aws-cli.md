@@ -1,9 +1,6 @@
-Exemplos de comandos CLI AWS:
 
 ```markdown
 # Comandos CLI da AWS
-
-Aqui estão alguns comandos CLI úteis da AWS com exemplos práticos.
 
 ## AWS CLI Instalação e Configuração
 
