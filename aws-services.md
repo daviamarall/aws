@@ -1,7 +1,7 @@
 ## Gerais
 
 ### Amazon API Gateway 🌐
-Crie, mantenha e proteja APIs em qualquer escala.
+Cria, mantém e projeta APIs em qualquer escala.
 
 ### Amazon Cliente VPN 🔒
 Acesso remoto gerenciado para sua força de trabalho remota, com segurança e em sua rede local, elástico.
@@ -13,7 +13,7 @@ Gerenciador de custos.
 Relatório de custos.
 
 ### Interface da Linha de Comando (CLI) da AWS 💻
-Linha de comando.
+Ferramenta de gerenciamento AWS via linha de comando.
 
 ### Elastic Load Balancing (ELB) 🌐
 Distribui o tráfego de aplicações entre vários destinos e dispositivos em uma ou mais AZs.
@@ -22,15 +22,15 @@ Distribui o tráfego de aplicações entre vários destinos e dispositivos em um
 Reservada, sob demanda, spot.
 
 ### Infraestrutura global da AWS 🌍
-Regiões da AWS, zonas de disponibilidade, EDGE LOCATIONS.
+Regiões da AWS, zonas de disponibilidade, Edge Location.
 
 ### Infraestrutura como código (IaC) 🌐
-CLODFORMATION.
+CloudFormation permite modelar, provisionar e gerenciar recursos da AWS e de terceiros ao tratar a infraestrutura como código.
 
 ### Imagens de máquina da Amazon (AMIs) 🖼️
 
 ### Console de Gerenciamento da AWS 🖥️
-CONSOLE UAI.
+CONSOLE UAI!. Gerenciamento dos recursos AWS via interface web.
 
 ### AWS Marketplace 🛒
 Catálogo digital com milhares de ofertas de provedores independentes de software.
@@ -100,7 +100,7 @@ Implanta aplicações web.
 - AWS Glue 🧩
   Integração sem servidor, descoberta, preparação, movimentação e integração de dados de várias fontes para análise, machine learning (ML) e desenvolvimento de aplicações.
 
-### Serviços de computação e sem servidor
+### Serviços de computação 
 
 - AWS Batch ⚙️
   Processamento em lote, treinamento de modelo de ML sem servidor.
@@ -129,7 +129,7 @@ Implanta aplicações web.
 - AWS Fargate 🚢
   Serviço de container sem servidor.
 
-### Banco de dados
+### Dados
 
 - Amazon Aurora 🌌
   Relacional 5x mais rápido.
@@ -182,7 +182,7 @@ Implanta aplicações web.
 - AWS CodeStar ⭐
   Desenvolve, compila e deploya. O bicho é completão, tá ligado. Interface unificada.
 
-### Interação com os clientes
+### Interação com clientes
 
 - Amazon Connect ☎️
   Cria central de atendimento ao cliente a custo menor, central de atendimento na nuvem.
@@ -288,7 +288,7 @@ Implanta aplicações web.
 - AWS WAF 🌐
   Protege contra explorações comuns da web e bots que podem afetar a disponibilidade, comprometer a segurança ou consumir recursos excessivos.
 
-### Armazenamento
+### Armazenamento de dados
 
 - AWS Backup 📁
   Serviço econômico, gerenciado, baseado em políticas que simplifica a proteção de dados em escala.
