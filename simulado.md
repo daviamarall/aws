@@ -1,6 +1,6 @@
 # Pergunta 1 
 Ao criar um bucket S3, quais regras devem ser seguidas em relação ao nome do bucket? (Selecione todas as opções corretas) Escolha as 2 respostas corretas:
-A. Os nomes dos buckets devem ser exclusivos em toda a AWS.
+A- Os nomes dos buckets devem ser exclusivos em toda a AWS.
 B. Os nomes dos buckets devem ter entre 3 e 63 caracteres de comprimento.
 C. Os nomes dos buckets devem conter pelo menos uma letra maiúscula.
 D. Os nomes dos buckets podem ser formatados como endereços IP.
