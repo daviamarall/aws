@@ -26,8 +26,9 @@ C. Faturamento consolidado
 
 D. CloudTrail
 
-Resposta: A
-Explicação:
+**Resposta**: A
+
+**Explicação**:
 O CloudWatch é o serviço da AWS que permite coletar métricas e criar alarmes com base nessas métricas. As métricas de faturamento podem ser rastreadas no CloudWatch, portanto, é possível criar alarmes de faturamento.
 
 # Pergunta 3
@@ -41,7 +42,7 @@ C. ElastiCache
 
 D. Auto Scaling
 
-Resposta: AD
+**Resposta**: AD
 
 # Pergunta 4
 Qual classe de armazenamento do S3 possui a classificação de disponibilidade mais baixa para objetos?
@@ -55,8 +56,9 @@ C. Acesso Infrequente
 
 D. Todas têm a mesma classificação de disponibilidade
 
-Resposta: C
-Explicação:
+**Resposta**: C
+
+**Explicação**:
 O acesso infrequente tem a classificação de disponibilidade mais baixa (99,90%). Padrão e Redundância Reduzida têm uma classificação de disponibilidade de 99,99%.
 
 # Pergunta 5
@@ -70,7 +72,8 @@ B. A criptografia de dados (objetos) armazenados no S3.
 C. Criação e exclusão de buckets do S3
 
 D. O tamanho total em gigabytes de todos os objetos armazenados
-Resposta: AD
+
+**Resposta**: AD
 
 # Pergunta 6
 
@@ -85,8 +88,9 @@ C. Construiu adequadamente um sistema tolerante a falhas.
 
 D. Nenhuma das alternativas acima
 
-Resposta: C
-Explicação:
+**Resposta**: C
+
+**Explicação**:
 Um sistema tolerante a falhas é aquele que pode suportar uma certa quantidade de falhas e ainda permanecer operacional.
 
 # Pergunta 7
@@ -103,7 +107,7 @@ C. Testar sua própria rede/aplicação em busca de vulnerabilidades.
 
 D. Nenhuma das alternativas acima
 
-Resposta: C
+**Resposta**: C
 
 # Pergunta 8
 
@@ -119,7 +123,7 @@ C. A AWS é um provedor de serviços em nuvem.
 
 D. Nenhuma das alternativas acima
 
-Resposta: C
+**Resposta**: C
 
 # Pergunta 9
 
@@ -134,9 +138,9 @@ C. Configurar um alarme CloudWatch com um limite de alarme definido para dispara
 
 D. Nenhuma das alternativas acima
 
-Resposta: B
+**Resposta**: B
 
-Explicação:
+**Explicação**:
 A resposta é configurar um alarme CloudWatch com um limite de alarme definido para disparar quando a utilização da CPU for superior a 70%. Isso exibirá o alarme no estado "alarme" quando a utilização da CPU for superior a 70%. Esta pergunta foi formulada de forma muito específica com as palavras "ultrapassar 70%", o que desqualifica a resposta que afirmou "superior ou igual a 70%". O exame AWS terá perguntas muito complicadas como esta.
 
 # Pergunta 10
@@ -153,9 +157,9 @@ C. Disponibilidade de 99,999999999% e durabilidade de 99,99%
 
 D. Durabilidade de 99,999999999% e disponibilidade de 99,00%
 
-Resposta: A
+**Resposta**: A
 
-Explicação:
+**Explicação**:
 A classe de armazenamento S3 Standard possui uma classificação de durabilidade de 99,999999999% (11 noves) e uma disponibilidade de 99,99%.
 
 # Pergunta 11
@@ -171,8 +175,9 @@ C. Alterar a classe de armazenamento diretamente no objeto.
 
 D. Nenhuma das alternativas acima
 
-Resposta: B
-Explicação:
+**Resposta**: B
+
+**Explicação**:
 Qualquer objeto carregado no S3 deve primeiro ser colocado em uma das classes de armazenamento: Padrão, Redundância Reduzida ou Acesso Infrequente. Uma vez no S3, a única maneira de mover o objeto para o Glacier é por meio de uma política de ciclo de vida.
 
 # Pergunta 14
@@ -186,7 +191,7 @@ C. Eficiência de custos
 
 D. Nenhuma das alternativas acima
 
-Resposta: ABC
+**Resposta**: ABC
 
 # Pergunta 19
 
@@ -201,8 +206,9 @@ C. Gerenciamento de Acesso
 
 D. Nenhuma das alternativas acima
 
-Resposta: D
-Explicação:
+**Resposta**: D
+
+**Explicação**:
 O Gerenciamento de Identidade e Acesso (IAM) é o serviço da AWS onde as políticas de senha e as credenciais do usuário são gerenciadas. (Política e Gerenciamento de Acesso como serviço não existem).
 
 # Pergunta 20
@@ -217,8 +223,9 @@ C. Selecionar e gerenciar ativamente o tipo e a capacidade da instância.
 
 D. Executar código sem provisionar servidores.
 
-Resposta: AD
-Explicação:
+**Resposta**: AD
+
+**Explicação**:
 O Lambda, sendo a plataforma de computação sem servidor da AWS, significa que não há servidores, tipos de instância ou capacidade para selecionar. Isso é gerenciado para você. Com o Lambda, você paga apenas pelo tempo em que seu código está sendo executado.
 
 # Pergunta 21
@@ -234,8 +241,9 @@ C. Habilitar o CloudTrail para registrar e relatar problemas que ocorrem com as 
 
 D. Configurar notificações SNS com base em alarmes métricos EC2 do CloudWatch.
 
-Resposta: D
-Explicação:
+**Resposta**: D
+
+**Explicação**:
 
 O CloudWatch é usado para rastrear métricas em todas as instâncias EC2. Alarmes métricos podem ser configurados para acionar mensagens SNS se algo der errado.
 
@@ -252,9 +260,9 @@ C. NACL (Lista de Controle de Acesso à Rede)
 
 D. Auto Scaling
 
-Resposta: B
+**Resposta**: B
 
-Explicação:
+**Explicação**:
 Um Balanceador de Carga Elástico (ELB) é responsável por distribuir uniformemente o tráfego da web recebido entre todas as instâncias EC2 associadas a ele. Isso ajuda a evitar que um servidor fique sobrecarregado de tráfego, enquanto outro permanece subutilizado.
 
 # Pergunta 23
@@ -270,9 +278,9 @@ C. Route 53
 
 D. CloudFront
 
-Resposta: A
+**Resposta**: A
 
-Explicação:
+**Explicação**:
 Um Balanceador de Carga Elástico (ELB) é projetado para distribuir uniformemente o tráfego da web recebido entre todos os servidores associados a ele.
 
 # Pergunta 24
@@ -289,9 +297,9 @@ C. Karen deve comprar instâncias reservadas com capacidade suficiente para cobr
 
 D. Karen deve comprar instâncias reservadas com capacidade suficiente para cobrir a base de 1000 usuários e, em seguida, contar com instâncias spot para o período de 8 horas de tráfego aumentado todos os dias.
 
-Resposta: C
+**Resposta**: C
 
-Explicação:
+**Explicação**:
 As instâncias reservadas devem ser usadas para lidar com o tráfego básico esperado para o site. As instâncias reservadas (em termos de 1/3 de ano) podem ser adquiridas com um desconto significativo em relação às instâncias sob demanda. Qualquer tráfego variável acima da base deve ser tratado com instâncias sob demanda (pois podem ser adicionadas/removidas a qualquer momento, com base na demanda atual). Instâncias spot não devem ser usadas nesse cenário.
 
 # Pergunta 33
@@ -306,9 +314,9 @@ C. Grupo de Segurança (Security Group)
 
 D. Listas de Segurança
 
-Resposta: BC
+**Resposta**: BC
 
-Explicação:
+**Explicação**:
 As Listas de Controle de Acesso à Rede (NACL) atuam como um firewall no nível do sub-rede, e os Grupos de Segurança atuam como um firewall no nível da instância.
 
 # Pergunta 37
@@ -324,9 +332,9 @@ C. Capacidade de computação sem servidor
 
 D. Proteção integrada contra DDoS
 
-Resposta: D
+**Resposta**: D
 
-Explicação:
+**Explicação**:
 O CloudFront permite que você armazene conteúdo em locais de borda. Quando uma solicitação é feita para esse conteúdo, a solicitação é enviada para um local de borda (não para o hardware de sua aplicação), portanto, os locais de borda absorverão qualquer ataque DDoS e protegerão seu hardware subjacente.
 
 # Pergunta 39
@@ -342,9 +350,9 @@ C. Lambda
 
 D. CloudFront
 
-Resposta: D
+**Resposta**: D
 
-Explicação:
+**Explicação**:
 O CloudFront é composto por uma rede de Locais de Borda (onde o conteúdo é armazenado em cache).
 
 # Pergunta 42
@@ -361,7 +369,7 @@ C. Onde você armazena AMIs que cria.
 
 D. Onde você seleciona a capacidade de computação de uma instância EC2.
 
-Resposta: B
+**Resposta**: B
 
 # Pergunta 45
 
@@ -376,9 +384,9 @@ C. CloudWatch
 
 D. Route 53
 
-Resposta: D
+**Resposta**: D
 
-Explicação:
+**Explicação**:
 O Route 53 é o serviço da AWS para gerenciamento de domínios e DNS. (DomainServices não existe).
 
 # Pergunta 46
@@ -394,8 +402,9 @@ C. Ele não tem autenticação de vários fatores (MFA) ativada.
 
 D. Não há uma política de acesso IAM anexada à sua função IAM.
 
-Resposta: A
-Explicação:
+**Resposta**: A
+
+**Explicação**:
 Quando um usuário IAM é criado, esse usuário NÃO tem acesso a nenhum serviço da AWS. Para ganhar acesso a um servidor AWS, um usuário IAM deve ter permissão concedida a ele. Isso é feito anexando uma política de acesso IAM ao usuário IAM (ou por meio de um grupo anexado). No entanto, apenas fazer parte de um grupo não concede acesso. Uma política adequada deve ser anexada a esse grupo.
 
 # Pergunta 50
@@ -411,9 +420,9 @@ C. Pasta
 
 D. Objeto
 
-Resposta: D
+**Resposta**: D
 
-Explicação:
+**Explicação**:
 Os arquivos armazenados no S3 são chamados de objetos.
 
 # Pergunta 55
@@ -429,9 +438,9 @@ C. IAM (Identity and Access Management)
 
 D. EC2 (Elastic Cloud Compute)
 
-Resposta: D
+**Resposta**: D
 
-Explicação:
+**Explicação**:
 O Elastic Cloud Compute (EC2) da AWS é uma plataforma de computação baseada em servidores. Você pode usá-lo para provisionar e usar servidores com base em Linux e Windows.
 
 # Pergunta 57
@@ -448,9 +457,9 @@ C. MySQL
 
 D. Aurora
 
-Resposta: D
+**Resposta**: D
 
-Explicação:
+**Explicação**:
 A AWS criou seu próprio mecanismo de banco de dados SQL personalizado, chamado Aurora.
 
 # Pergunta 59
@@ -469,7 +478,7 @@ D. RDS (Relational Database Service)
 
 Resposta: D
 
-Explicação:
+**Explicação**:
 O RDS oferece opções de banco de dados SQL, também conhecidas como bancos de dados relacionais.
 
 # Pergunta 63
@@ -486,7 +495,7 @@ C. White Papers da AWS
 
 D. Documentação de Serviço da AWS
 
-Resposta: C
+**Resposta**: C
 
 # Pergunta 64
 
@@ -502,9 +511,9 @@ C. Nada, você está livre para fazer testes de penetração quando quiser.
 
 D. Nenhuma das alternativas acima
 
-Resposta: B
+**Resposta**: B
 
-Explicação:
+**Explicação**:
 Antes de realizar qualquer teste de penetração em sua conta AWS, é importante entrar em contato com a AWS e obter autorização.
 
 # Pergunta 65
@@ -523,7 +532,7 @@ D. Elasticsearch
 
 Resposta: D
 
-Explicação:
+**Explicação**:
 Elasticsearch é um mecanismo de busca altamente escalável disponível na AWS.
 
 # Pergunta 66
@@ -541,7 +550,8 @@ C. Uma maneira de monitorar recursos e aplicativos, coletar e rastrear métricas
 D. Nenhuma das alternativas acima
 
 Resposta: C
-Explicação:
+
+**Explicação**:
 O Amazon CloudWatch é um serviço de monitoramento que permite monitorar recursos e aplicativos, coletar e rastrear métricas e definir alarmes.
 
 # Pergunta 67
@@ -558,7 +568,7 @@ C. Um local onde o CloudWatch armazena métricas.
 
 D. Nenhuma das alternativas acima
 
-Resposta: A
+**Resposta**: A
 
 Explicação:
 Uma zona de disponibilidade é uma área geográfica na qual a AWS opera um ou mais data centers.
@@ -579,7 +589,7 @@ D. Nenhuma das alternativas acima
 
 Resposta: C
 
-Explicação:
+**Explicação**:
 Você deve usar uma instância EC2 com uma única instância quando tem uma carga de trabalho simples que não precisa de alta disponibilidade e tolerância a falhas. Para alta disponibilidade, é comum usar instâncias EC2 em grupos de Auto Scaling.
 
 # Pergunta 69
@@ -596,9 +606,9 @@ C. Um banco de dados relacional totalmente gerenciado.
 
 D. Proteção contra ataques DDoS.
 
-Resposta: B
+**Resposta**: B
 
-Explicação:
+**Explicação**:
 O principal benefício do Amazon S3 é o armazenamento de dados altamente escalável e durável.
 
 # NOVA PERGUNTA 70
@@ -614,7 +624,8 @@ C. Nada, você está livre para fazer testes de penetração quando quiser.
 
 D. Nenhuma das alternativas acima
 
-Resposta: B
+**Resposta**: B
+
 Explicação:
 Você deve entrar em contato com a AWS antes de realizar qualquer teste de penetração em sua conta. Se você não notificar a AWS primeiro, eles podem desativar sua conta.
 
@@ -649,9 +660,9 @@ C. Acesso a um nível de plano de suporte superior.
 
 D. Nenhuma das alternativas acima
 
-Resposta: B
+**Resposta**: B
 
-Explicação:
+**Explicação**:
 A faturação consolidada permite que você visualize, gerencie e pague faturas de várias contas da AWS em uma única interface de usuário. Descontos por volume podem ser obtidos combinando o uso de todas as contas que você possui.
 
 # NOVA PERGUNTA 79
@@ -668,9 +679,9 @@ C. O Cost Explorer ajuda a calcular o custo de uso do EC2 por hora; o Calculador
 
 D. O Cost Explorer é uma lista de preços para cada serviço da AWS; o Calculador de TCO ajuda a calcular o custo de uso do EC2 por hora.
 
-Resposta: B
+**Resposta**: B
 
-Explicação:
+**Explicação**:
 
 O Calculador de TCO é uma ferramenta gratuita fornecida pela AWS que permite estimar a economia de custos de usar a AWS em comparação com o uso de um centro de dados local. O Cost Explorer é uma ferramenta gratuita que permite visualizar as cobranças de custo (ajuda a analisar onde você está gastando dinheiro).
 
@@ -687,7 +698,8 @@ B. Propriedade Contínua Total
 C. O Custo de Propriedade
 
 D. Nenhuma das alternativas acima
-Resposta: D
 
-Explicação:
+**Resposta**: D
+
+**Explicação**:
 TCO significa Total Cost of Ownership (Custo Total de Propriedade).
