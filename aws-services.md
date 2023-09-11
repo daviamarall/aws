@@ -28,6 +28,7 @@ Regiões da AWS, zonas de disponibilidade, Edge Location.
 CloudFormation permite modelar, provisionar e gerenciar recursos da AWS e de terceiros ao tratar a infraestrutura como código.
 
 ### Imagens de máquina da Amazon (AMIs) 🖼️
+Uma Imagem de máquina da Amazon (AMI) é uma imagem compatível e mantida pela AWS, que fornece as informações necessárias para iniciar uma instância. 
 
 ### Console de Gerenciamento da AWS 🖥️
 CONSOLE UAI!. Gerenciamento dos recursos AWS via interface web.
