@@ -202,7 +202,7 @@ Implanta aplicações web.
   Infra como código, modela, provisiona, gerencia recursos AWS, tipo Terraform.
   
 - AWS CloudTrail 🌐
-  Monitora e registra a atividade da conta por toda a infra da AWS. Controle sobre armazenamento, análise e ações de remediação.
+Registra as chamadas de API realizadas na sua conta. As informações gravadas são identidade do chamador da API, hora da chamada da API, endereço IP de origem do chamador da API e muito mais. Você pode pensar no CloudTrail como uma “trilha” de migalhas de pão (ou um log de ações) que alguém deixou para trás.
   
 - Amazon CloudWatch ☁️
   Coleta e visualiza logs, métricas e dados de eventos em tempo real, painéis automatizados, para otimizar a infra e manutenção de apps.
