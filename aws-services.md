@@ -1,7 +1,7 @@
 ## Gerais
 
 ### Amazon API Gateway 🌐
-Cria, mantém e projeta APIs em qualquer escala.
+Criar, publicar, manter, monitorar e proteger APIs de forma escalável. 
 
 ### Amazon Cliente VPN 🔒
 Acesso remoto gerenciado para sua força de trabalho remota, com segurança e em sua rede local, elástico.
