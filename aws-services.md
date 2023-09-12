@@ -4,7 +4,7 @@
 Criar, publicar, manter, monitorar e proteger APIs de forma escalável. 
 
 ### Amazon Cliente VPN 🔒
-Acesso remoto gerenciado para sua força de trabalho remota, com segurança e em sua rede local, elástico.
+Serviço de VPN gerenciado baseado no cliente, protege o acesso aos recursos da AWS e aos recursos na sua rede on-premises.
 
 ### Cost Explorer 💰
 Gerenciador de custos.
