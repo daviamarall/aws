@@ -7,7 +7,7 @@ Criar, publicar, manter, monitorar e proteger APIs de forma escalável.
 Serviço de VPN gerenciado baseado no cliente, protege o acesso aos recursos da AWS e aos recursos na sua rede on-premises.
 
 ### Cost Explorer 💰
-Gerenciador de custos.
+Visualize, entenda e gerencie os custos e o uso da AWS ao longo do tempo.
 
 ### Relatório de Custos e Uso da AWS 📊
 Relatório de custos.
