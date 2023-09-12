@@ -228,6 +228,9 @@ Registra as chamadas de API realizadas na sua conta. Você pode pensar no CloudT
 - AWS Secrets Manager 🔑
   Gerencia, recupera e altera credenciais de BDs, chaves de API, etc. Todo ciclo de vida.
   
+- AWS Key Management Service 🔑🔑(KMS)
+  Crie e controle chaves usadas para criptografar ou assinar digitalmente seus dados
+  
 - AWS Systems Manager 🚀
   Gerenciamento de recursos na AWS e em ambientes de várias nuvens e híbridos.
   
