@@ -90,7 +90,7 @@ Implanta aplicações web.
   Mensageria simples.
   
 - Amazon Simple Queue Service (Amazon SQS) 📬
-  Mensageria com resposta.
+  Mensageria com resposta. Usado para desacoplar as aplicações.
   
 - Amazon MQ 💌
   Mensageria entre várias plataformas, integra serviços desacoplados.
