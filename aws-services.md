@@ -98,8 +98,8 @@ Implanta aplicações web.
 - Amazon AppFlow 🌊
   Automatize fluxos de dados bidirecionais entre aplicações SaaS e serviços da AWS com o Amazon AppFlow em apenas alguns cliques.
   
-- AWS Glue 🧩
-  Integração sem servidor, descoberta, preparação, movimentação e integração de dados de várias fontes para análise, machine learning (ML) e desenvolvimento de aplicações.
+- AWS Glue 🧩 (ETL / ML)
+  Extração, transformação e carregamento de dados(ELT).Pode ser usado para, por exemplo, extrair dados de uma base de dados RDS ou S3, transforma-la e carrega-la em um sistema Redshift.
 
 ### Serviços de computação 
 
