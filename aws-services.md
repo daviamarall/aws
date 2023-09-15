@@ -76,7 +76,7 @@ Implanta aplicações web.
 ### Análises
 
 - Amazon Athena 📊
-  Análise de dados interativa sem servidor, analisa petabytes.
+  Análise de dados interativa sem servidor, analisa petabytes. Amazon Athena é um Banco de dados Serverless usado apenas para fazer consultas nos buckets S3, é usado para consultar dados armazenados no S3 e fazer análises de logs
   
 - Amazon Kinesis 📹
   Coleta, processamento e análise de vídeo e dados de streaming em tempo real.
