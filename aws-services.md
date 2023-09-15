@@ -284,7 +284,7 @@ Registra as chamadas de API realizadas na sua conta. Você pode pensar no CloudT
   O Amazon Inspector detecta automaticamente workloads, como instâncias do Amazon EC2, contêineres e funções do Lambda, e as verifica em busca de vulnerabilidades de software e exposição não intencional da rede.
   
 - Amazon Macie 🔐
-  Serviço de segurança e privacidade de dados que usa ML e correspondência de padrões para descobrir e proteger dados confidenciais.
+  Descubre dados confidenciais no seu ambiente do S3.
   
 - AWS Shield 🛡️
   Proteção contra DDoS.
