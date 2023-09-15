@@ -281,7 +281,7 @@ Registra as chamadas de API realizadas na sua conta. Você pode pensar no CloudT
   Você especifica quem ou o que pode acessar serviços e recursos na AWS. Gerenciar permissões refinadas de maneira centralizada e analisar o acesso para refinhar as permissões.
   
 - Amazon Inspector 🕵️
-  É um serviço de gerenciamento de vulnerabilidades que verifica continuamente AWS workloads.
+  O Amazon Inspector detecta automaticamente workloads, como instâncias do Amazon EC2, contêineres e funções do Lambda, e as verifica em busca de vulnerabilidades de software e exposição não intencional da rede.
   
 - Amazon Macie 🔐
   Serviço de segurança e privacidade de dados que usa ML e correspondência de padrões para descobrir e proteger dados confidenciais.
