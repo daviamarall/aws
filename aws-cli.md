@@ -41,7 +41,9 @@ $ aws s3 mb s3://meu-bucket-unico
 ```
 
 ### Remover Bucket S3
+```bash
 aws s3 rb s3://seu-bucket --force
+```
 
 ### Enviar um Arquivo para um Bucket S3
 ```bash
