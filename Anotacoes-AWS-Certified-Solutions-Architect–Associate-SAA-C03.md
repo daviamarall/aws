@@ -2,7 +2,9 @@
 
 ## Descrição do curso 
 
-  Dominio 1: Projetar arquiteturas seguras '''
-  Dominio 2: Projetar arquiteturas resilientes
-  Dominio 3: Projetar arquiteturas de alta performance
-  Dominio 4: Projetar arquiteturas econômicas
+• Domínio 1: Criação de arquiteturas seguras (30% do conteúdo pontuado)
+• Domínio 2: Criação de arquiteturas resilientes (26% do conteúdo pontuado)
+• Domínio 3: Criação de arquiteturas de alto desempenho (24% do conteúdo
+pontuado)
+• Domínio 4: Criação de arquiteturas com custo otimizado (20% do conteúdo
+pontuado)
