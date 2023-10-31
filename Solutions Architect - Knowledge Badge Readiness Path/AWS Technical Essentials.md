@@ -17,9 +17,13 @@ A AWS fornece serviços de computação em nuvem. Os recursos de TI mencionados 
 ## Seis vantagens da computação em nuvem 
 
 * Pagamento conforme uso
+  
      Em vez de investir em datacenters e hardware antes de saber como você vai usá-los, você paga somente quando usa recursos de computação e apenas pelo quanto você usa.
+  
 * Beneficiar-se de economia massiva em escala
+  
      O uso da computação em nuvem permite obter um custo inferior ao que você obtém em seu ambiente local. Considerando que o uso de centenas de milhares de clientes é agregado na nuvem, a AWS consegue obter economias maiores de escala, o que resulta em preços mais baixos com pagamento conforme o uso (pay as-you-go).
+  
 * Parar de adivinhar a capacidade
 * Aumentar a velocidade e a agilidade
 * Realizar economia de custos
