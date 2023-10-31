@@ -93,7 +93,7 @@ As AZs também têm um nome de código. Como eles estão localizados dentro das 
 
 * **us-east-1a**: uma AZ em us-east-1 (Região Norte da Virgínia)
 * **sa-east-1b**: uma AZ em sa-east-1 (Região de São Paulo)
-* 
+  
 Portanto, se você perceber que existe um recurso em us-east-1c, você pode inferir que o recurso está localizado em AZ c da região us-east-1.
 
 ## Manter a resiliência
@@ -103,9 +103,11 @@ Para manter sua aplicação disponível, você deve manter alta disponibilidade 
 ![image](https://github.com/daviamarall/aws/assets/40430859/db6d0279-1df0-4709-bfb6-dae8e869fab1)
 
 ## Recursos
-https://aws.amazon.com/about-aws/global-infrastructure/ ´ 
-https://docs.aws.amazon.com/whitepapers/latest/aws-overview/global-infrastructure.html ´
-https://aws.amazon.com/about-aws/global-infrastructure/regions_az/ ´
-https://docs.aws.amazon.com/general/latest/gr/rande.html
-https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/
-  
+## Recursos
+
+[Link 1](https://aws.amazon.com/about-aws/global-infrastructure/)
+[Link 2](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/global-infrastructure.html)
+[Link 3](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/)
+[Link 4](https://docs.aws.amazon.com/general/latest/gr/rande.html)
+[Link 5](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/)
+
