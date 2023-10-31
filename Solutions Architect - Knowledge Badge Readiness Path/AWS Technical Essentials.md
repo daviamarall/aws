@@ -126,6 +126,7 @@ Para manter sua aplicação disponível, você deve manter alta disponibilidade 
 
 ![image](https://github.com/daviamarall/aws/assets/40430859/904e90f9-d72b-46f0-b05b-bcbc29849102)
 
+![image](https://github.com/daviamarall/aws/assets/40430859/0b7dc71f-b464-4d09-834f-9e791b0d4a12)
 
 
 
