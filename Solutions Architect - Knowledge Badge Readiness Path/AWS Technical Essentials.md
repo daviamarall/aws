@@ -37,12 +37,24 @@ conforme o uso (pay as-you-go).
 ![image](https://github.com/daviamarall/aws/assets/40430859/d0b0e17d-62af-4bf4-ab1c-f58c27d9047d)
 
 * Aumentar a velocidade e a agilidade
-* Realizar economia de custos
-* Obtenha alcance global.
-* 
 
+  Os recursos de TI estão a apenas um clique de distância, o que significa que você reduz o tempo para disponibilizar recursos para seus desenvolvedores de semanas para minutos. Isso resulta em um aumento drástico na agilidade da organização, pois o custo e o tempo necessários para experimentar e desenvolver são significativamente mais baixos.
+  
+![image](https://github.com/daviamarall/aws/assets/40430859/9c4835b5-2c9c-4911-8717-14a06f4b42e6)
+
+* Realizar economia de custos,
+
+  As empresas podem se concentrar em projetos que diferenciam seus negócios em vez de manter datacenters. A computação em nuvem permite que você se concentre em seus clientes, ao invés de no trabalho pesado de estruturar, empilhar e manter a estrutura física. Isso, geralmente, é chamado de trabalho pesado indiferenciado.
+  
+![image](https://github.com/daviamarall/aws/assets/40430859/1ba7ff67-262b-4ede-86c1-c6cffaffe5ff)
+  
+* Obtenha alcance global.
+
+  As aplicações podem ser implantadas em várias regiões ao redor do mundo com alguns cliques. Isso significa que você pode oferecer baixa latência e uma melhor experiência aos seus clientes a um custo mínimo.
+
+![image](https://github.com/daviamarall/aws/assets/40430859/4a2f6ef8-9fd6-4b06-af49-a8e345efe039)
+
+  
 
 
 ![image](https://github.com/daviamarall/aws/assets/40430859/da035121-d371-4df2-ba4c-2caf1656e5c0)
-
-  
