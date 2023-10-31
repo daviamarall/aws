@@ -19,12 +19,20 @@ A AWS fornece serviços de computação em nuvem. Os recursos de TI mencionados 
 * Pagamento conforme uso
   
      Em vez de investir em datacenters e hardware antes de saber como você vai usá-los, você paga somente quando usa recursos de computação e apenas pelo quanto você usa.
+  ![image](https://github.com/daviamarall/aws/assets/40430859/bcbfe357-f327-4994-8a1d-de16506d71ec)
+
   
 * Beneficiar-se de economia massiva em escala
   
-     O uso da computação em nuvem permite obter um custo inferior ao que você obtém em seu ambiente local. Considerando que o uso de centenas de milhares de clientes é agregado na nuvem, a AWS consegue obter economias maiores de escala, o que resulta em preços mais baixos com pagamento conforme o uso (pay as-you-go).
+     O uso da computação em nuvem permite obter um custo inferior ao que você obtém em seu ambiente local. Considerando que o uso de centenas de milhares de clientes é agregado na nuvem, a AWS consegue obter economias maiores de escala, o que resulta em preços mais baixos com pagamento
+conforme o uso (pay as-you-go).
+![image](https://github.com/daviamarall/aws/assets/40430859/7d5f12c2-b048-4197-9b5b-f0795221dd29)
   
 * Parar de adivinhar a capacidade
+  
+  Elimine as suposições ao determinar sua necessidade de capacidade de infraestrutura. Muitas vezes, ao tomar uma decisão sobre a capacidade antes de implantar uma aplicação, você acaba precisando lidar com recursos caros e ociosos ou com capacidade limitada. Com a computação em nuvem, esses problemas são resolvidos. Você pode acessar a quantidade de capacidade que quiser e aumentar e reduzir a escala na vertical, conforme a necessidade em apenas alguns minutos.
+![image](https://github.com/daviamarall/aws/assets/40430859/d0b0e17d-62af-4bf4-ab1c-f58c27d9047d)
+
 * Aumentar a velocidade e a agilidade
 * Realizar economia de custos
 * Obtenha alcance global.
