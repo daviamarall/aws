@@ -39,4 +39,10 @@ conforme o uso (pay as-you-go).
 * Aumentar a velocidade e a agilidade
 * Realizar economia de custos
 * Obtenha alcance global.
+* 
+
+
+
+![image](https://github.com/daviamarall/aws/assets/40430859/da035121-d371-4df2-ba4c-2caf1656e5c0)
+
   
