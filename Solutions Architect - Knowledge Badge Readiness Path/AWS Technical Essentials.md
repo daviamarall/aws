@@ -105,9 +105,9 @@ Para manter sua aplicação disponível, você deve manter alta disponibilidade 
 ## Recursos
 ## Recursos
 
-[Link 1](https://aws.amazon.com/about-aws/global-infrastructure/)
-[Link 2](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/global-infrastructure.html)
-[Link 3](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/)
-[Link 4](https://docs.aws.amazon.com/general/latest/gr/rande.html)
-[Link 5](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/)
+[Site externo: AWS: infraestrutura global](https://aws.amazon.com/about-aws/global-infrastructure/)
+[Site externo: AWS: documentação de infraestrutura global da AWS](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/global-infrastructure.html)
+[Site externo: AWS: zonas de disponibilidade e regiões da AWS](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/)
+[Site externo: AWS: endpoints de produto da AWS](https://docs.aws.amazon.com/general/latest/gr/rande.html)
+[Site externo: AWS: produtos regionais da AWS](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/)
 
