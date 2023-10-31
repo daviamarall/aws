@@ -79,4 +79,33 @@ Aqui estão exemplos de códigos de região:
 
 ![image](https://github.com/daviamarall/aws/assets/40430859/d0a87181-e4a7-4c70-a043-2a16a5923fbc)
 
+## Escolha da região 
+
+  Quando você decidir qual região da AWS hospedar suas aplicações e workloads, considere quatro aspectos principais: latência, preço, disponibilidade do serviço e conformidade.
+
+## Zonas de disponibilidade 
+
+![image](https://github.com/daviamarall/aws/assets/40430859/97177606-b1b1-44ec-a49f-e0dee85d7480)
+
+Dentro de todas as regiões há um cluster de zonas de disponibilidade (AZs). Uma AZ consiste em um ou mais datacenters com energia, rede e conectividade redundantes. Esses datacenters operam em instalações discretas em localizações não reveladas. Eles são conectados usando links redundantes de alta velocidade e baixa latência.
+
+As AZs também têm um nome de código. Como eles estão localizados dentro das Regiões, eles podem ser endereçados com o anexo de uma letra ao final do nome de código da Região. Por exemplo:
+
+* **us-east-1a**: uma AZ em us-east-1 (Região Norte da Virgínia)
+* **sa-east-1b**: uma AZ em sa-east-1 (Região de São Paulo)
+* 
+Portanto, se você perceber que existe um recurso em us-east-1c, você pode inferir que o recurso está localizado em AZ c da região us-east-1.
+
+## Manter a resiliência
+
+Para manter sua aplicação disponível, você deve manter alta disponibilidade e resiliência. Uma prática recomendada bem-conhecida para a arquitetura de nuvem é usar serviços gerenciados com escopo da região. No mínimo, você deve usar duas AZs. Dessa forma, se uma AZ falhar, sua aplicação terá a infraestrutura em funcionamento em uma segunda AZ para assumir o tráfego.
+
+![image](https://github.com/daviamarall/aws/assets/40430859/db6d0279-1df0-4709-bfb6-dae8e869fab1)
+
+## Recursos
+https://aws.amazon.com/about-aws/global-infrastructure/
+https://docs.aws.amazon.com/whitepapers/latest/aws-overview/global-infrastructure.html
+https://aws.amazon.com/about-aws/global-infrastructure/regions_az/
+https://docs.aws.amazon.com/general/latest/gr/rande.html
+https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/
   
