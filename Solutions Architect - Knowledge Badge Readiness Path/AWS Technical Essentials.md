@@ -103,9 +103,9 @@ Para manter sua aplicação disponível, você deve manter alta disponibilidade 
 ![image](https://github.com/daviamarall/aws/assets/40430859/db6d0279-1df0-4709-bfb6-dae8e869fab1)
 
 ## Recursos
-https://aws.amazon.com/about-aws/global-infrastructure/
-https://docs.aws.amazon.com/whitepapers/latest/aws-overview/global-infrastructure.html
-https://aws.amazon.com/about-aws/global-infrastructure/regions_az/
-https://docs.aws.amazon.com/general/latest/gr/rande.html
-https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/
+**https://aws.amazon.com/about-aws/global-infrastructure/**
+**https://docs.aws.amazon.com/whitepapers/latest/aws-overview/global-infrastructure.html**
+**https://aws.amazon.com/about-aws/global-infrastructure/regions_az/**
+**https://docs.aws.amazon.com/general/latest/gr/rande.html**
+**https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/**
   
