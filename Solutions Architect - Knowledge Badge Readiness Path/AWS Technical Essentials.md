@@ -58,3 +58,23 @@ conforme o uso (pay as-you-go).
 ## Diagrama exemplo de serviços utilizados. 
 
 ![image](https://github.com/daviamarall/aws/assets/40430859/da035121-d371-4df2-ba4c-2caf1656e5c0)
+
+
+
+# Infraestrutura global da AWS 
+
+* Regiões
+  ![image](https://github.com/daviamarall/aws/assets/40430859/94203ab7-dfa1-4dd1-8bb2-13994b19e619)
+
+As regiões são locais geográficos em todo o mundo em que a AWS hospeda seus datacenters. As regiões da AWS têm o nome do local em que elas residem. Por exemplo, nos Estados Unidos, a Região do Norte da Virgínia é chamada de Região do Norte da Virgínia e a Região no Oregon é chamada de Região do Oregon. A AWS tem regiões na Ásia-Pacífico, Canadá, Europa, Oriente Médio e América do Sul, e continuamos a expandir para atender às necessidades de nossos clientes.
+
+Cada região da AWS está associada a um nome geográfico e a um código de região.
+
+Aqui estão exemplos de códigos de região:
+
+* **us-east-1:** a primeira região criada na área leste dos EUA. O nome geográfico desta região é o Norte da Virgínia.
+* **ap-northeast-1:** a primeira região criada na região nordeste da Ásia-Pacífico. O nome geográfico desta região é Tóquio.
+
+![image](https://github.com/daviamarall/aws/assets/40430859/d0a87181-e4a7-4c70-a043-2a16a5923fbc)
+
+  
