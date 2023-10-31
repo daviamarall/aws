@@ -2,14 +2,6 @@
 
 Este repositório contém exemplos e materiais de estudo relacionados à Amazon Web Services (AWS). Aqui você encontrará amostras de código, tutoriais e informações úteis para aprender e aprimorar suas habilidades na utilização dos serviços da AWS.
 
-## Estrutura do Repositório
-
-O repositório está organizado da seguinte maneira:
-
-- **/exemplos**: Pasta contendo exemplos de código e scripts relacionados a diferentes serviços da AWS.
-- **/tutoriais**: Diretório com tutoriais passo a passo sobre como realizar tarefas específicas na AWS.
-- **/recursos**: Pasta que inclui documentos, apresentações ou links úteis para aprofundar o conhecimento sobre a AWS.
-
 ## Como Contribuir
 
 Se você quiser contribuir para este repositório, sinta-se à vontade para fazer um fork e enviar suas melhorias. Você também pode abrir issues para relatar problemas ou sugerir novas ideias de conteúdo.
