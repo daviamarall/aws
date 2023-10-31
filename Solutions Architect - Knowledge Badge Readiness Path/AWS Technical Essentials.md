@@ -1,4 +1,4 @@
-# O que é a AWS?
+![vaHSHojK8J7Hh3CA_p_rfivVJmCDGC9T1](https://github.com/daviamarall/aws/assets/40430859/750bbb3a-c5c9-4459-b8f6-ef817549a805)# O que é a AWS?
 
 ## On-premises e computação em nuvem
 
@@ -114,4 +114,22 @@ Para manter sua aplicação disponível, você deve manter alta disponibilidade 
 [AWS: endpoints de produto da AWS](https://docs.aws.amazon.com/general/latest/gr/rande.html)
 
 [AWS: produtos regionais da AWS](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/)
+
+
+## Interação com a AWS 
+
+* Console de gereciamento 
+* A AWS Command Line Interface (AWS CLI)
+* SDKs da AWS
+
+## Segurança e o modelo de responsabilidade compartilhada da AWS
+
+## Modelo de responsabilidade compartilhada. 
+
+![image](https://github.com/daviamarall/aws/assets/40430859/904e90f9-d72b-46f0-b05b-bcbc29849102)
+
+
+
+
+
 
