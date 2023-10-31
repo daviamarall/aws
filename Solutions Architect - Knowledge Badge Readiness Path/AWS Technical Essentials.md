@@ -1,4 +1,4 @@
-![vaHSHojK8J7Hh3CA_p_rfivVJmCDGC9T1](https://github.com/daviamarall/aws/assets/40430859/750bbb3a-c5c9-4459-b8f6-ef817549a805)# O que é a AWS?
+## O que é a AWS?
 
 ## On-premises e computação em nuvem
 
@@ -59,9 +59,7 @@ conforme o uso (pay as-you-go).
 
 ![image](https://github.com/daviamarall/aws/assets/40430859/da035121-d371-4df2-ba4c-2caf1656e5c0)
 
-
-
-# Infraestrutura global da AWS 
+## Infraestrutura global da AWS 
 
 ## Regiões
 
