@@ -130,5 +130,39 @@ Para manter sua aplicação disponível, você deve manter alta disponibilidade 
 
 
 
+## 
+
+## Autenticação
+
+Ao criar sua conta da AWS, você usa a combinação de um endereço de e-mail e uma senha para verificar sua identidade. Se um usuário digitar o e-mail e a senha corretos, o sistema pressupõe que o usuário tem permissão para entrar e concede acesso a ele. Este é o processo de autenticação.
+
+## Autorização
+
+Depois que você está autenticado e na sua conta da AWS, você pode estar curioso sobre quais ações você pode tomar. É aqui que entra a autorização. Autorização é o processo de dar aos usuários a permissão para acessar recursos e produtos da AWS. A autorização determina se um usuário pode executar determinadas ações, como ler, editar, excluir ou criar recursos.
+
+## Usuário raiz da AWS
+
+Ao criar uma conta da AWS pela primeira vez, você começa com uma única identidade de login que tem acesso completo a todos os produtos e recursos da AWS na conta. Essa identidade é chamada de usuário da conta da AWS e é acessada pelo login com o endereço de e-mail e a senha que você usou para criar a conta. 
+
+## Credenciais de usuário raiz da AWS
+
+O usuário raiz da AWS tem dois conjuntos de credenciais associados a ele. Um conjunto de credenciais é o endereço de e-mail e a senha usados para criar a conta. Isso permite que você acesse o Console de Gerenciamento da AWS. O segundo conjunto de credenciais é chamado de chaves de acesso, que permitem que você faça solicitações programáticas do AWS Command Line Interface (AWS CLI) ou da API da AWS.
+
+As chaves de acesso são compostas por duas partes:
+
+ID da chave de acesso, por exemplo, A2lAl5EXAMPLE
+Chave de acesso secreta, por exemplo, wJalrFE/KbEKxE
+
+
+## Práticas recomendadas ao trabalhar com o usuário raiz da AWS
+
+O usuário raiz tem acesso total a todos os produtos e recursos da AWS em sua conta, além de suas informações pessoais e de faturamento. Devido a isso, você deve bloquear com segurança as credenciais associadas ao usuário raiz e não usar o usuário raiz para tarefas diárias.
+
+Para garantir a segurança do usuário raiz, siga estas práticas recomendadas:
+
+- Escolha uma senha forte para o usuário raiz
+- Nunca compartilhe sua senha de usuário raiz ou chaves de acesso com ninguém
+- Desativar ou excluir as chaves de acesso associadas ao usuário raiz
+- Não use o usuário raiz para tarefas administrativas ou tarefas diárias
 
 
