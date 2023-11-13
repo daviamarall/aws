@@ -151,6 +151,7 @@ O usuário raiz da AWS tem dois conjuntos de credenciais associados a ele. Um co
 As chaves de acesso são compostas por duas partes:
 
 ID da chave de acesso, por exemplo, A2lAl5EXAMPLE
+
 Chave de acesso secreta, por exemplo, wJalrFE/KbEKxE
 
 
