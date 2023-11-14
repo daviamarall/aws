@@ -10,6 +10,9 @@
 - AWS Data Centers 
 - AWS Edge Locations /Points of Presence
 
+## Regiões
+A AWS tem o conceito de uma região, que é um local físico em todo o mundo onde agrupamos datacenters. Chamamos cada grupo de datacenters lógicos de zona de disponibilidade. Cada região da AWS consiste no mínimo em três AZs isoladas e separadas fisicamente em uma área geográfica.
+
 Reference https://infrastructure.aws/
 
 ![image](https://github.com/daviamarall/aws/assets/40430859/67f665ba-8f56-4200-917f-c3c0d5ed111d)
