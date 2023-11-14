@@ -27,10 +27,10 @@ How to choose an AWS Region?
 
 Se precisar lançar uma nova aplicação, onde deverá fazê-lo?
 
-**Conformidade com governança de dados e requisitos legais:** os dados nunca saem de uma região sem a sua permissão explícita.
-**Proximidade com os clientes**: latência reduzida.
-**Serviços disponíveis dentro de uma região**: novos serviços e funcionalidades não estão disponíveis em todas as regiões.
-**Preços**: os preços variam de região para região e são transparentes na página de preços do serviço.
+- **Conformidade com governança de dados e requisitos legais:** os dados nunca saem de uma região sem a sua permissão explícita.
+- **Proximidade com os clientes**: latência reduzida.
+- **Serviços disponíveis dentro de uma região**: novos serviços e funcionalidades não estão disponíveis em todas as regiões.
+- **Preços**: os preços variam de região para região e são transparentes na página de preços do serviço.
 
 
 
