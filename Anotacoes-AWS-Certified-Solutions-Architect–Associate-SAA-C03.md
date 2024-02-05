@@ -11,4 +11,7 @@
 ### IAM: Users e Groups 
 
 - **IAM** = Identity and Access Management, Global service. Identidade e gerenciamento de acesso.
-- **Root account** created by default, shouldn't be used or shared. Não deve ser usada ou compartilhada. 
+- **Root account** created by default, shouldn't be used or shared. Não deve ser usada ou compartilhada.
+• **Users** são pessoas dentro da sua organização e podem ser agrupadas.
+• **Groups** contêm apenas usuários, não outros grupos.
+• **Users** não precisam pertencer a um grupo, e um usuário pode pertencer a vários grupos.
