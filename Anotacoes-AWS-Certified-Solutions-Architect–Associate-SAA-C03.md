@@ -8,3 +8,7 @@
 * Domínio 4: Criação de arquiteturas com custo otimizado (20% do conteúdo pontuado)
 
 
+### IAM: Users e Groups 
+
+- IAM = Identity and Access Management, Global service. Identidade e gerenciamento de acesso.
+- Root account created by default, shouldn't be used or shared. Não deve ser usada ou compartilhada. 
