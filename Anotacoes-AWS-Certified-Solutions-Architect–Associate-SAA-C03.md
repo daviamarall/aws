@@ -15,3 +15,10 @@
 - **Users** são pessoas dentro da sua organização e podem ser agrupadas.
 - **Groups** contêm apenas usuários, não outros grupos.
 - **Users** não precisam pertencer a um grupo, e um usuário pode pertencer a vários grupos.
+![image](https://github.com/daviamarall/aws/assets/40430859/1f3f3e48-dc1e-4ac3-a7a6-465e309604c2)
+
+### IAM: Permissions 
+
+- Users or Groups podem ser designados por documentos JSON chamados políticas.
+- Estas políticas definem as permissões dos usuários.
+- Na AWS, você aplica o princípio do menor privilégio: não conceda mais permissões do que um usuário precisa.
