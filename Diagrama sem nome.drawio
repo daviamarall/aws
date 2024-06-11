@@ -1,4 +1,3 @@
-Para criar um diagrama no draw.io que utilize os mesmos ícones e estilo, como linhas tracejadas e ícones específicos da AWS, vou fornecer um exemplo mais detalhado. Abaixo está uma versão em XML para draw.io que se assemelha ao diagrama fornecido na imagem:
 
 ```xml
 <mxfile host="app.diagrams.net">
