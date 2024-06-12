@@ -1,9 +1,198 @@
-<mxfile host="app.diagrams.net" modified="2024-06-12T14:51:12.032Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" version="24.5.3" etag="ZKQjm02xpTg56j4_UoFh" type="github">
-  <diagram name="Página-1" id="AnRYfN0CshFXFY-PqTXb">
-    <mxGraphModel>
+<mxfile host="app.diagrams.net">
+  <diagram name="Fluxo de Trabalho Sem Alertas">
+    <mxGraphModel dx="1663" dy="820" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="2" value="Início" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="20" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="Revisar a data de chegada da última alerta não manual" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="80" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="Situação confirmada?" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="140" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="Informar com detalhes da última alerta recebida e em qual fila" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="200" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="Falta um tipo particular de alerta?" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="280" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="Não estão chegando alertas em determinadas filas" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="340" width="300" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="Detecion Engine está gerando alertas?" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="400" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="Revisar status em t_transactions por canal para as últimas horas de processamento" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="460" width="360" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="Revisar se as transações são persistidas na big table" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="540" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="Revisar o log de processamento" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="600" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="Revisar as regras que mais geram alertas e tipos de mensagens configuradas" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="660" width="360" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="Pode ser que não estamos recebendo o tipo de mensagem que gera mais volume de alertas" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="740" width="420" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="14" value="Estamos processando sem erro?" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="800" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="15" value="Alertas estão no canal de saída?" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="860" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="16" value="Revisar o log de processamento" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="920" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="17" value="Reiniciar canal pela console web do DE" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="980" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="18" value="O canal pode estar verde na console mas no log está parado?" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="1040" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="19" value="Pode ser um problema de espaço no BD" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="1100" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="20" value="Pedir que os DBAs revisem" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="1160" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="21" value="Tentar um insert manual" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="1220" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="22" value="Pode ser que tde_sendalert esteja bloqueado" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="1280" width="320" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="23" value="Revisar logs de processamento buscando erros" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="1340" width="340" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="24" value="Fim" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="1400" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="25" value="Sem Alertas" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="200" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="26" value="Dataextractor de alertas e alert posting estão ativos?" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="260" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="27" value="Se não estiverem verdes, reiniciar" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="320" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="28" value="Pode estar verde mas não funcionando bem" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="380" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="29" value="Revisar logs:" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="440" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="30" value="Data extractor" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="500" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="31" value="Alert posting" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="560" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="32" value="Event viewer (versões antigas)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="620" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="33" value="Reiniciar o serviço Message Queuing (em services)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="680" width="300" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="34" edge="1" parent="1" source="2" target="3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="35" edge="1" parent="1" source="3" target="4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="36" edge="1" parent="1" source="4" target="5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="37" edge="1" parent="1" source="4" target="25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="38" edge="1" parent="1" source="5" target="6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="39" edge="1" parent="1" source="6" target="7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="40" edge="1" parent="1" source="7" target="8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="41" edge="1" parent="1" source="8" target="9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="42" edge="1" parent="1" source="9" target="10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="43" edge="1" parent="1" source="10" target="11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="44" edge="1" parent="1" source="11" target="12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="45" edge="1" parent="1" source="12" target="13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="46" edge="1" parent="1" source="13" target="14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="47" edge="1" parent="1" source="14" target="15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="48" edge="1" parent="1" source="15" target="16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="49" edge="1" parent="1" source="16" target="17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="50" edge="1" parent="1" source="17" target="18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="51" edge="1" parent="1" source="18" target="19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="52" edge="1" parent="1" source="19" target="20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="53" edge="1" parent="1" source="20" target="21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="54" edge="1" parent="1" source="21" target="22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="55" edge="1" parent="1" source="22" target="23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="56" edge="1" parent="1" source="23" target="24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="57" edge="1" parent="1" source="25" target="26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="58" edge="1" parent="1" source="26" target="27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="59" edge="1" parent="1" source="27" target="28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="60" edge="1" parent="1" source="28" target="29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="61" edge="1" parent="1" source="29" target="30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="62" edge="1" parent="1" source="30" target="31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="63" edge="1" parent="1" source="31" target="32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="64" edge="1" parent="1" source="32" target="33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
