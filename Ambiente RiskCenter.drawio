@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-06-13T13:15:30.655Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="FI1O9GJ-_9hFCKAZ7jaq" version="24.5.4" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-13T13:23:42.924Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="VzJf6oV3v5spKmB0WzPL" version="24.5.4" type="github">
   <diagram name="Página-1" id="xzBU_N4A5D91nfDYqDyT">
-    <mxGraphModel dx="4060" dy="758" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="3717" dy="632" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -43,7 +43,7 @@
         <mxCell id="rqP_-Npx7YA7qhz6Y2l_-12" value="" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.cloud;" parent="rqP_-Npx7YA7qhz6Y2l_-27" vertex="1">
           <mxGeometry x="355" y="605" width="175" height="113" as="geometry" />
         </mxCell>
-        <mxCell id="jPE5NSnq966SAD9NA4_V-1" value="TCP&lt;br&gt;BD&lt;br&gt;WEB SERVICES&lt;br&gt;FILAS" style="verticalLabelPosition=bottom;aspect=fixed;html=1;shape=mxgraph.salesforce.channels;" vertex="1" parent="rqP_-Npx7YA7qhz6Y2l_-27">
+        <mxCell id="jPE5NSnq966SAD9NA4_V-1" value="CANAIS&amp;nbsp;&amp;nbsp;&lt;br&gt;&lt;br&gt;TCP&lt;br&gt;BD&lt;br&gt;WEB SERVICES&lt;br&gt;FILAS" style="verticalLabelPosition=bottom;aspect=fixed;html=1;shape=mxgraph.salesforce.channels;" vertex="1" parent="rqP_-Npx7YA7qhz6Y2l_-27">
           <mxGeometry x="758" y="612.5" width="98" height="98" as="geometry" />
         </mxCell>
         <mxCell id="jPE5NSnq966SAD9NA4_V-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.071;entryY=0.495;entryDx=0;entryDy=0;entryPerimeter=0;flowAnimation=1;shape=link;" edge="1" parent="rqP_-Npx7YA7qhz6Y2l_-27" source="rqP_-Npx7YA7qhz6Y2l_-12" target="jPE5NSnq966SAD9NA4_V-1">
