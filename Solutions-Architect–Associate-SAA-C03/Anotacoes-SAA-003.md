@@ -59,7 +59,23 @@
   ![image](https://github.com/user-attachments/assets/79fb60c4-59a8-4f2b-a41a-b439837fe879)
 - Principal benefício do MFA: se uma senha for roubada ou hackeada, a conta não será comprometida
 
+### Dispositivos de MFA 
+![image](https://github.com/user-attachments/assets/1af33412-655a-4737-a5ec-194d4582cb5b)
+![image](https://github.com/user-attachments/assets/c91013a1-9191-4798-adcc-4a4fe51daa35)
 
+### Como os usuários podem acessar a AWS?
+
+- Para acessar a AWS, você tem três opções:
+  - Console de Gerenciamento da AWS (protegido por senha + MFA)
+  - Interface de Linha de Comando da AWS (CLI): protegida por chaves de acesso
+  - Kit de Desenvolvimento de Software da AWS (SDK) - para código: protegido por chaves de acesso
+- As chaves de acesso são geradas através do Console da AWS
+- Os usuários gerenciam suas próprias chaves de acesso
+- As chaves de acesso são secretas, assim como uma senha. Não as compartilhe
+- ID da Chave de Acesso ~= nome de usuário
+- Chave de Acesso Secreta ~= senha
+
+Se precisar de mais alguma coisa, estou aqui para ajudar! 😊
 
 
 
