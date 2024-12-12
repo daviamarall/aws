@@ -1,4 +1,4 @@
-
+![image](https://github.com/user-attachments/assets/b1f5a17b-325f-4f15-9dfd-d9b0f17846f5)
 # Anotações 
 
 ## IAM 
@@ -74,6 +74,33 @@
 - As chaves de acesso são secretas, assim como uma senha. Não as compartilhe
 - ID da Chave de Acesso ~= nome de usuário
 - Chave de Acesso Secreta ~= senha
+
+#### Exemplo Acess Keys
+
+- Access key ID: AKIASK4E37PV4983d6C
+- Secret Access Key: AZPN3zojWozWCndIjhB0Unh8239a1bzbzO5fqqkZq
+
+### O que é o AWS CLI?
+
+- Uma ferramenta que permite interagir com os serviços da AWS usando comandos no seu terminal de linha de comando
+- Acesso direto às APIs públicas dos serviços da AWS
+- Você pode desenvolver scripts para gerenciar seus recursos
+- É open-source: https://github.com/aws/aws-cli
+- Alternativa ao uso do Console de Gerenciamento da AWS
+![image](https://github.com/user-attachments/assets/83e19206-e7c3-4f4f-8ce2-7cd5aff2646b)
+
+### O que é o AWS SDK?
+- Kit de Desenvolvimento de Software da AWS (AWS SDK)
+- APIs específicas para cada linguagem (conjunto de bibliotecas)
+- Permite acessar e gerenciar os serviços da AWS programaticamente
+- Integrado dentro da sua aplicação
+- Suporta:
+  - SDKs (JavaScript, Python, PHP, .NET, Ruby, Java, Go, Node.js, C++)
+  - SDKs móveis (Android, iOS, ...)
+  - SDKs para dispositivos IoT (Embedded C, Arduino, ...)
+- Exemplo: o AWS CLI é construído sobre o AWS SDK para Python
+
+
 
 
 
