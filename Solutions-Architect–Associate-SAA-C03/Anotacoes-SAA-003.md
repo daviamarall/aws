@@ -75,7 +75,6 @@
 - ID da Chave de Acesso ~= nome de usuário
 - Chave de Acesso Secreta ~= senha
 
-Se precisar de mais alguma coisa, estou aqui para ajudar! 😊
 
 
 
