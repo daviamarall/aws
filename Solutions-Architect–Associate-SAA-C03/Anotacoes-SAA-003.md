@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/b1f5a17b-325f-4f15-9dfd-d9b0f17846f5)
+
 # Anotações 
 
 ## IAM 
