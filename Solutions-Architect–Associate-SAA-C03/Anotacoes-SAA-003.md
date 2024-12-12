@@ -39,6 +39,27 @@
 #### Exemplo: 
 ![image](https://github.com/user-attachments/assets/f89a3867-6132-45df-8928-2b4e048c65fb)
 
+### IAM – Política de Senhas
+- Senhas fortes = maior segurança para sua conta
+- Na AWS, você pode configurar uma política de senhas:
+  - Definir um comprimento mínimo para a senha
+  - Exigir tipos específicos de caracteres:
+    - incluindo letras maiúsculas
+    - letras minúsculas
+    - números
+    - caracteres não alfanuméricos
+  - Permitir que todos os usuários IAM mudem suas próprias senhas
+  - Exigir que os usuários mudem suas senhas após algum tempo (expiração da senha)
+  - Prevenir a reutilização de senhas
+
+### Autenticação Multifator - MFA
+- Usuários têm acesso à sua conta e podem possivelmente alterar configurações ou deletar recursos na sua conta AWS
+- Você quer proteger suas Contas Root e usuários IAM
+- MFA = senha que você conhece + dispositivo de segurança que você possui
+  ![image](https://github.com/user-attachments/assets/79fb60c4-59a8-4f2b-a41a-b439837fe879)
+- Principal benefício do MFA: se uma senha for roubada ou hackeada, a conta não será comprometida
+
+
 
 
 
