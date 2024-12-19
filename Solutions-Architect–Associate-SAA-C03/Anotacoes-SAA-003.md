@@ -148,9 +148,17 @@
 8. **Audite permissões regularmente**: Use o Relatório de Credenciais IAM e o Consultor de Acesso para revisar o que está sendo usado.  
 9. **Nunca compartilhe usuários ou chaves de acesso IAM**: Cada pessoa ou aplicação deve ter suas próprias credenciais.  
 
-Essas práticas ajudam a manter sua conta AWS segura e organizada!
+### Resumo da Seção IAM  
 
-
+- **Usuários**: Representam pessoas físicas e têm senha para acessar o Console AWS.  
+- **Grupos**: Servem para organizar usuários (contêm apenas usuários).  
+- **Políticas**: São documentos JSON que definem as permissões para usuários ou grupos.  
+- **Funções (Roles)**: Usadas por instâncias EC2 ou serviços da AWS para executar ações específicas.  
+- **Segurança**: Sempre use MFA e implemente uma política de senha forte.  
+- **AWS CLI**: Ferramenta para gerenciar serviços da AWS pelo terminal.  
+- **AWS SDK**: Permite gerenciar serviços da AWS usando linguagens de programação.  
+- **Chaves de Acesso**: Necessárias para usar o CLI ou SDK.  
+- **Auditoria**: Use o Relatório de Credenciais IAM e o Consultor de Acesso para monitorar e revisar suas permissões.  
 
 
 
