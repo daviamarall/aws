@@ -133,7 +133,7 @@
   - Um relatório que lista todos os usuários da sua conta e o status de suas diversas credenciais.  
 
 - **IAM Access Advisor** (nível do usuário):  
-  - O consultor de acesso exibe as permissões de serviço concedidas a um usuário e quando esses serviços foram acessados pela última vez.  
+  - O IAM Access Advisor exibe as permissões de serviço concedidas a um usuário e quando esses serviços foram acessados pela última vez.  
   - Você pode usar essas informações para revisar suas políticas.  
 
 
