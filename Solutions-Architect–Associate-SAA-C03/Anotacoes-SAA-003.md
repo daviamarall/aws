@@ -136,7 +136,19 @@
   - O IAM Access Advisor exibe as permissões de serviço concedidas a um usuário e quando esses serviços foram acessados pela última vez.  
   - Você pode usar essas informações para revisar suas políticas.  
 
+### Diretrizes e Boas Práticas do IAM  
 
+1. **Evite usar a conta root**: Use-a apenas para configurar sua conta AWS.  
+2. **Um usuário físico = Um usuário AWS**: Cada pessoa deve ter seu próprio usuário IAM.  
+3. **Organize usuários em grupos**: Atribua permissões aos grupos, não individualmente.  
+4. **Tenha uma política de senha forte**: Senhas complexas e seguras são fundamentais.  
+5. **Ative o MFA (Autenticação Multifator)**: Garanta que todos usem o MFA para maior segurança.  
+6. **Use Funções (Roles)**: Conceda permissões a serviços da AWS usando roles em vez de usuários.  
+7. **Chaves de Acesso**: Use-as apenas para acesso programático (CLI/SDK).  
+8. **Audite permissões regularmente**: Use o Relatório de Credenciais IAM e o Consultor de Acesso para revisar o que está sendo usado.  
+9. **Nunca compartilhe usuários ou chaves de acesso IAM**: Cada pessoa ou aplicação deve ter suas próprias credenciais.  
+
+Essas práticas ajudam a manter sua conta AWS segura e organizada!
 
 
 
