@@ -101,7 +101,22 @@
 - Exemplo: o AWS CLI é construído sobre o AWS SDK para Python
 
 
+**AWS CloudShell** 
+É um serviço da AWS que fornece um ambiente de shell baseado em navegador para gerenciar recursos da AWS diretamente do console. Ele é pré-configurado com as ferramentas mais usadas para administração e automação de recursos na AWS, como o AWS CLI, SDKs, ferramentas de gerenciamento, e utilitários comuns de Unix/Linux.
 
+### Principais características:
+1. **Ambiente pronto para uso**: Não é necessário instalar ou configurar ferramentas localmente.
+2. **Baseado em navegador**: Acesso fácil pelo console da AWS, sem dependência de um terminal local.
+3. **Armazenamento persistente**: Inclui 1 GB de armazenamento persistente por região para scripts, arquivos e dados.
+4. **Segurança integrada**: O ambiente usa suas credenciais e permissões IAM para interagir de forma segura com os recursos.
+5. **Ferramentas pré-instaladas**: Como Git, Python, Node.js, e muito mais, além do AWS CLI.
+
+### Casos de uso:
+- **Automação de tarefas**: Executar comandos no AWS CLI para criar, modificar ou excluir recursos.
+- **Desenvolvimento e teste**: Escrever e testar scripts em Python, Bash, etc.
+- **Acesso remoto seguro**: Trabalhar com seus recursos de qualquer dispositivo com acesso à internet.
+
+**Vantagem principal**: Reduz o tempo e esforço necessário para configurar e gerenciar um ambiente CLI para interagir com a AWS.
 
 
 
