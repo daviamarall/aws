@@ -1,4 +1,4 @@
-
+7
 # Anotações 
 
 ## IAM 
@@ -118,9 +118,23 @@
 
 **Vantagem principal**: Reduz o tempo e esforço necessário para configurar e gerenciar um ambiente CLI para interagir com a AWS.
 
+### Funções IAM para Serviços 
+• Alguns serviços da AWS precisarão realizar ações em seu nome.  
+• Para isso, atribuímos permissões aos serviços da AWS com **IAM Roles** (Funções IAM).  
+• Funções comuns:  
+   - **Funções para Instâncias EC2**  
+   - **Funções para Funções Lambda**  
+   - **Funções para o CloudFormation**  
+![image](https://github.com/user-attachments/assets/34cf479a-8da7-4be9-b522-0369b9846613)
 
+###  Ferramentas de Segurança IAM 
 
+- **IAM Credentials Report** (nível da conta):  
+  - Um relatório que lista todos os usuários da sua conta e o status de suas diversas credenciais.  
 
+- **IAM Access Advisor** (nível do usuário):  
+  - O consultor de acesso exibe as permissões de serviço concedidas a um usuário e quando esses serviços foram acessados pela última vez.  
+  - Você pode usar essas informações para revisar suas políticas.  
 
 
 
