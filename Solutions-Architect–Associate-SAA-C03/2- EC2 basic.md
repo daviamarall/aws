@@ -80,6 +80,7 @@ Rede
 • Os Security Groups são a base da segurança de rede na AWS.  
 • Eles controlam como o tráfego é permitido para dentro ou fora das nossas instâncias EC2.  
 ![image](https://github.com/user-attachments/assets/0b1703bc-74d1-4f69-a7e8-5c3c5834d1ee)
+
 • Os Security Groups contêm apenas regras.  
 • As regras dos Security Groups podem fazer referência por IP ou por outro Security Group.  
 
