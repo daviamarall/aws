@@ -155,3 +155,6 @@ aws s3 ls --profile dev
 3. Pare a mesma instância.
 
 ---
+### Documentação oficial 
+
+https://docs.aws.amazon.com/pt_br/cli/latest/userguide/cli-chap-welcome.html
