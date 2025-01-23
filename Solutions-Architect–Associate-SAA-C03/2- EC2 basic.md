@@ -85,3 +85,57 @@ Rede
 • Os Security Groups contêm apenas regras.  
 • As regras dos Security Groups podem fazer referência por IP ou por outro Security Group.  
 
+## Security Groups
+
+### Visão Geral
+Os grupos de segurança atuam como um "firewall" para instâncias EC2. Eles regulam:
+
+- Acesso às Portas
+- Faixas de IP autorizadas - IPv4 e IPv6
+- Controle de rede de entrada (de outros para a instância)
+- Controle de rede de saída (da instância para outros)
+
+![alt text](image.png)
+
+### Diagrama 
+![alt text](image-1.png)
+
+## Pontos Importantes
+- Podem ser anexados a várias instâncias
+- Estão vinculados a uma combinação de região/VPC
+- Operam "fora" da instância EC2 – se o tráfego for bloqueado, a instância EC2 não o verá
+- É recomendável manter um grupo de segurança separado para acesso SSH
+- Se sua aplicação não estiver acessível (timeout), o problema está no grupo de segurança
+- Se sua aplicação apresentar o erro "connection refused", então é um problema na aplicação ou ela não foi iniciada
+- Todo o tráfego de entrada é bloqueado por padrão
+- Todo o tráfego de saída é autorizado por padrão
+
+## Referenciando Outros Grupos de Segurança
+Os grupos de segurança podem ser configurados para referenciar outros grupos de segurança dentro da mesma VPC. Isso permite criar regras de tráfego que permitem ou negam acesso entre recursos associados a diferentes grupos de segurança.
+
+### Diagrama
+
+A seguir, um exemplo simplificado de como funciona a referência entre grupos de segurança:
+
+![alt text](image-2.png)
+
+## Ports
+
+- 22 = SSH (Secure Shell) - acesso a uma instância Linux
+- 21 = FTP (File Transfer Protocol) - upload de arquivos para um compartilhamento de arquivos
+- 22 = SFTP (Secure File Transfer Protocol) - upload de arquivos usando SSH
+- 80 = HTTP - acesso a sites não seguros
+- 443 = HTTPS - acesso a sites seguros
+- 3389 = RDP (Remote Desktop Protocol) - acesso a uma instância Windows
+
+## Opções de Compra de Instâncias EC2
+
+- **On-Demand Instances** – cargas de trabalho curtas, preço previsível, pagamento por segundo
+- **Reserved (1 e 3 anos)**  
+  - **Reserved Instances** – cargas de trabalho longas  
+  - **Convertible Reserved Instances** – cargas de trabalho longas com instâncias flexíveis
+- **Savings Plans (1 e 3 anos)** – compromisso com uma quantidade de uso, para cargas de trabalho longas
+- **Spot Instances** – cargas de trabalho curtas, econômicas, com possibilidade de perda de instâncias (menos confiáveis)
+- **Dedicated Hosts** – reserva de um servidor físico inteiro, controle total sobre o posicionamento das instâncias
+- **Dedicated Instances** – nenhum outro cliente compartilhará seu hardware
+- **Capacity Reservations** – reserva de capacidade em uma Zona de Disponibilidade específica por qualquer duração
