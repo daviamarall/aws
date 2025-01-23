@@ -139,3 +139,106 @@ A seguir, um exemplo simplificado de como funciona a referência entre grupos de
 - **Dedicated Hosts** – reserva de um servidor físico inteiro, controle total sobre o posicionamento das instâncias
 - **Dedicated Instances** – nenhum outro cliente compartilhará seu hardware
 - **Capacity Reservations** – reserva de capacidade em uma Zona de Disponibilidade específica por qualquer duração
+
+## EC2 On-Demand
+
+- **Pague pelo que usar:**
+  - **Linux ou Windows**: cobrança por segundo, após o primeiro minuto
+  - **Todos os outros sistemas operacionais**: cobrança por hora
+- Maior custo, mas sem pagamento antecipado
+- Sem compromisso de longo prazo
+- Recomendado para cargas de trabalho de curto prazo e ininterruptas, onde não é possível prever o comportamento da aplicação
+
+## EC2 Reserved Instances
+
+- **Desconto de até 72%** em comparação com On-Demand
+- Você reserva atributos específicos da instância (Tipo de Instância, Região, Tenancy, SO)
+- **Período de Reserva**: 1 ano (+desconto) ou 3 anos (+++desconto)
+- **Opções de Pagamento**:  
+  - Sem pagamento antecipado (+)  
+  - Parcialmente antecipado (++)  
+  - Totalmente antecipado (+++)
+- **Escopo da Instância Reservada**: Regional ou Zonal (reserva de capacidade em uma AZ)
+- Recomendado para aplicações de uso constante (como bancos de dados)
+- Você pode comprar e vender no **Marketplace de Instâncias Reservadas**
+
+### Convertible Reserved Instance
+- Permite alterar o tipo de instância EC2, família de instância, sistema operacional, escopo e tenancy
+- **Desconto de até 66%**
+
+## EC2 Spot Instances
+
+- **Desconto de até 90%** em comparação com On-Demand
+- Instâncias que podem ser \"perdidas\" a qualquer momento se o seu preço máximo for menor que o preço spot atual
+- **Instâncias mais econômicas** da AWS
+- Útil para cargas de trabalho resilientes a falhas, como:  
+  - Jobs em batch  
+  - Análise de dados  
+  - Processamento de imagens  
+  - Cargas de trabalho distribuídas  
+  - Cargas de trabalho com horários de início e término flexíveis
+- **Não recomendado** para trabalhos críticos ou bancos de dados
+
+## EC2 Dedicated Hosts
+
+- **Servidor físico** com capacidade de instâncias EC2 totalmente dedicado ao seu uso
+- Permite atender a requisitos de conformidade e utilizar suas licenças de software vinculadas ao servidor (por socket, por núcleo, ou por VM)
+- **Opções de Compra:**  
+  - **On-Demand**: pague por segundo enquanto o Dedicated Host estiver ativo  
+  - **Reservado**: 1 ou 3 anos (Sem pagamento antecipado, Parcialmente antecipado, Totalmente antecipado)
+- **Opção mais cara** disponível
+- Útil para:  
+  - Software com modelos de licenciamento complexos (**BYOL – Bring Your Own License**)  
+  - Empresas com fortes necessidades regulatórias ou de conformidade
+
+## EC2 Dedicated Instances
+
+- As instâncias são executadas em hardware **dedicado exclusivamente a você**
+- Podem compartilhar o hardware com outras instâncias **dentro da mesma conta**
+- **Sem controle sobre o posicionamento das instâncias** (o hardware pode ser alterado após um comando de Stop/Start)
+
+# Reservas de Capacidade EC2
+
+- Reserve capacidade de instâncias sob demanda em uma AZ específica por qualquer duração.
+- Você sempre terá acesso à capacidade do EC2 quando precisar.
+- Sem compromisso de tempo (crie/cancele a qualquer momento), sem descontos de cobrança.
+- Combine com Instâncias Reservadas Regionais e Planos de Economia para aproveitar descontos na cobrança.
+- Você será cobrado na tarifa sob demanda, independentemente de executar instâncias ou não.
+- Adequado para cargas de trabalho de curto prazo e ininterruptas que precisam estar em uma AZ específica.
+
+# Qual opção de compra é a certa para mim?
+
+- **Sob demanda**: como se hospedar no resort sempre que quisermos, pagando o preço total.
+- **Reservado**: se gostamos de planejar com antecedência e se vamos ficar por um longo período, podemos obter um bom desconto.
+- **Planos de Economia**: pagamos um valor fixo por hora por um período determinado e podemos ficar em qualquer tipo de quarto (ex.: King, Suíte, Vista para o Mar, ...).
+- **Instâncias Spot**: o hotel permite que as pessoas façam lances pelos quartos vazios, e o maior lance garante o quarto. Você pode ser convidado a sair a qualquer momento.
+- **Hosts Dedicados**: reservamos um edifício inteiro do resort.
+- **Reservas de Capacidade**: você reserva um quarto por um período pagando o preço total, mesmo que não se hospede nele.
+
+# Solicitações de Instâncias Spot EC2
+
+- Pode-se obter um desconto de até 90% em comparação com o modelo Sob Demanda.
+- Defina o preço máximo do spot e obtenha a instância enquanto o preço atual do spot for inferior ao preço máximo.
+- O preço horário do spot varia com base na oferta e na capacidade.
+- Se o preço atual do spot for superior ao seu preço máximo, você pode escolher parar ou terminar sua instância, com um período de carência de 2 minutos.
+- Outra estratégia: **Spot Block**
+  - "Bloqueia" a instância spot durante um período específico (de 1 a 6 horas) sem interrupções.
+  - Em situações raras, a instância pode ser recuperada.
+  - Usado para jobs em lote, análise de dados ou cargas de trabalho resilientes a falhas.
+  - Não é ideal para jobs críticos ou bancos de dados.
+
+# Fleets Spot
+
+- **Fleets Spot** = conjunto de Instâncias Spot + (opcional) Instâncias Sob Demanda.
+- O **Spot Fleet** tentará atender à capacidade alvo com restrições de preço.
+- Defina os possíveis pools de lançamento: tipo de instância (m5.large), SO, Zona de Disponibilidade.
+- Pode ter múltiplos pools de lançamento, para que a fleet possa escolher.
+- O Spot Fleet para de lançar instâncias ao atingir a capacidade ou o custo máximo.
+  
+## Estratégias para alocar Instâncias Spot:
+- **lowestPrice**: do pool com o preço mais baixo (otimização de custo, carga de trabalho curta).
+- **diversified**: distribuído por todos os pools (ótimo para disponibilidade, cargas de trabalho longas).
+- **capacityOptimized**: pool com a capacidade ideal para o número de instâncias.
+- **priceCapacityOptimized** (recomendado): pools com maior capacidade disponível, depois seleciona o pool com o menor preço (melhor escolha para a maioria das cargas de trabalho).
+  
+- **Spot Fleets** permitem solicitar automaticamente Instâncias Spot com o preço mais baixo.
