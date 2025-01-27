@@ -117,7 +117,7 @@ Os grupos de segurança podem ser configurados para referenciar outros grupos de
 
 A seguir, um exemplo simplificado de como funciona a referência entre grupos de segurança:
 
-![alt text](image-2.png)
+
 
 ## Ports
 
