@@ -117,7 +117,11 @@ Os grupos de segurança podem ser configurados para referenciar outros grupos de
 
 A seguir, um exemplo simplificado de como funciona a referência entre grupos de segurança:
 
+<<<<<<< HEAD
 
+=======
+![image](https://github.com/user-attachments/assets/6fa0bf36-66f4-4124-9923-b78c05229bc0)
+>>>>>>> c92f49dc0cd00cfcda527d92117639a7be11a20d
 
 ## Ports
 
