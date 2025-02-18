@@ -39,7 +39,7 @@
   - AWS WAF para bloquear tráfego malicioso
 
 
-Beleza! Vamos começar com **IAM (Identity and Access Management)**, que é um dos serviços mais críticos para controle de acesso na AWS.  
+Vamos começar com **IAM (Identity and Access Management)**, que é um dos serviços mais críticos para controle de acesso na AWS.  
 
 ---
 
@@ -135,8 +135,7 @@ aws sts assume-role --role-arn "arn:aws:iam::123456789012:role/MeuRole" --role-s
 | **AWS STS** | Gera credenciais temporárias para acessos seguros. |
 
 ---
-
-Com certeza! Vamos criar exemplos práticos para cada parte do primeiro conteúdo sobre **IAM Users, Groups, Roles, Policies, IAM Identity Center e AWS STS**.
+Vamos criar exemplos práticos para cada parte do primeiro conteúdo sobre **IAM Users, Groups, Roles, Policies, IAM Identity Center e AWS STS**.
 
 ---
 
@@ -275,7 +274,7 @@ Agora podemos configurar essas credenciais temporárias no ambiente para acessar
 ✅ Criamos uma **Role** para EC2 acessar o S3 sem credenciais fixas.  
 ✅ Utilizamos **AWS STS** para acessar um recurso de forma temporária.
 
-Ótimo! Agora vamos falar sobre **segurança de rede na AWS**, abordando **Security Groups, NACLs, AWS WAF, AWS Shield e AWS Network Firewall**.  
+Agora vamos falar sobre **segurança de rede na AWS**, abordando **Security Groups, NACLs, AWS WAF, AWS Shield e AWS Network Firewall**.  
 
 ---
 
