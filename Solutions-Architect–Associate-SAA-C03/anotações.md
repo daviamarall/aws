@@ -1,4 +1,4 @@
-**Domínio 1: Criação de arquiteturas seguras**, que representa 30% do exame SAA-C03. Esse domínio abrange os seguintes tópicos principais:
+# **Domínio 1: Criação de arquiteturas seguras**, que representa 30% do exame SAA-C03. Esse domínio abrange os seguintes tópicos principais:
 
 ### 1.1 Projetar cargas de trabalho seguras e com alto desempenho
 - Implementação de **controle de acesso** com IAM:
