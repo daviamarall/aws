@@ -764,6 +764,9 @@ A AWS opera com o **modelo de responsabilidade compartilhada**, o que significa 
   - Exemplo: Você deve configurar as permissões de acesso aos seus **buckets S3**, **RDS**, e **EC2**, além de proteger os dados com **criptografia**.
 - **Gerenciamento de identidade e acesso (IAM)**: O cliente deve **configurar políticas de IAM** e controlar quem pode acessar o quê.
 
+![image](https://github.com/user-attachments/assets/dd3c91dd-41ba-4885-a1cc-de0a623194e7)
+https://aws.amazon.com/pt/compliance/shared-responsibility-model/
+
 🔹 **Exemplo Prático:**
 - **AWS** cuida do **hardware** e da **infraestrutura** de rede.
 - **Você** é responsável por **gerenciar as permissões** de acesso aos recursos (ex: EC2, S3) e por **proteger os dados** armazenados (ex: usar criptografia em S3).
