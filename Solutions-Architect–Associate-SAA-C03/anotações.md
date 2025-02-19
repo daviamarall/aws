@@ -1148,3 +1148,108 @@ A **Recuperação de Desastres (DR)** envolve planejar e implementar estratégia
 ---
 
 🎯 **Esses conceitos são fundamentais para garantir que sua infraestrutura esteja preparada para **resistir a falhas** e **ataques cibernéticos**, além de garantir uma **recuperação rápida** quando necessário.** 
+
+
+Agora vamos para o último tópico do **Domínio 1: Criação de Arquiteturas Seguras**, focando em **Mitigação de DDoS e Ameaças**. Proteger suas aplicações contra ataques de **DDoS** e outras **ameaças cibernéticas** é essencial para garantir a **disponibilidade** e **integridade** da sua infraestrutura na nuvem. Vamos explorar as principais ferramentas e práticas da AWS para proteger sua arquitetura.
+
+---
+
+# 🔹 **Mitigação de DDoS e Ameaças**
+
+O **DDoS (Distributed Denial of Service)** é um tipo de ataque onde múltiplos sistemas comprometidos sobrecarregam um servidor ou serviço, deixando-o inacessível. No contexto da AWS, existem várias soluções que protegem contra DDoS e outras ameaças.
+
+### Ferramentas principais:
+- **AWS Shield Standard e Advanced**
+- **CloudFront para proteção contra ataques na camada de aplicação**
+- **AWS WAF para bloquear tráfego malicioso**
+
+---
+
+## ✅ **1. AWS Shield (Standard e Advanced)**  
+
+O **AWS Shield** oferece proteção contra ataques DDoS em sua infraestrutura. Existem duas versões principais do AWS Shield: **Standard** e **Advanced**.
+
+### 📌 **AWS Shield Standard**:
+- **Proteção contra ataques DDoS comuns**: O Shield Standard oferece **proteção automática** para todos os clientes da AWS sem custo adicional. Ele protege contra **ataques DDoS de camada 3 (rede)** e **camada 4 (transporte)**, como **SYN floods**, **UDP reflection attacks**, entre outros.
+- **Proteção para serviços como EC2, ELB, CloudFront e Route 53**: Esses serviços são automaticamente protegidos pelo Shield Standard.
+
+🔹 **Exemplo de Uso**:
+  - Se você está usando o **Amazon EC2** e **Elastic Load Balancing (ELB)**, o **Shield Standard** ajudará a proteger seus recursos contra ataques de sobrecarga de rede.
+
+### 📌 **AWS Shield Advanced**:
+- **Proteção avançada contra ataques DDoS**: O **Shield Advanced** oferece uma **proteção mais robusta** contra **ataques DDoS de maior escala e complexidade**, incluindo **proteção contra ataques em camadas superiores** (camada 7), como **ataques de aplicativos**.
+- **Resposta personalizada**: Inclui **notificações em tempo real** e **suporte 24x7** com a equipe de resposta a incidentes (DDoS response team - DRT).
+- **Proteção adicional para serviços como CloudFront, Route 53, e Global Accelerator**.
+- **Proteção contra falhas de rede**: O Shield Advanced ajuda a proteger contra ataques que visam recursos de rede mais críticos.
+
+🔹 **Exemplo de Uso**:
+  - Se você está operando um site de alto tráfego e está sujeito a **ataques direcionados** (como ataques a aplicativos web), o **Shield Advanced** fornecerá uma proteção mais robusta, incluindo **defesas contra ataques em camada 7**.
+
+### 🛠 **Passo a Passo - Configurando o AWS Shield**:
+1. **AWS Shield Standard**: Ativado automaticamente para todos os clientes.
+2. **AWS Shield Advanced**:
+   - Acesse o console do **AWS Shield** e inscreva-se para o plano **Advanced**.
+   - Configure **proteção personalizada** para recursos como **EC2**, **CloudFront**, **Route 53** e **Global Accelerator**.
+
+---
+
+## ✅ **2. CloudFront para Proteção contra Ataques na Camada de Aplicação**
+
+O **Amazon CloudFront** é um **CDN (Content Delivery Network)** que distribui conteúdo (como vídeos, imagens, e scripts) a partir de locais próximos ao usuário final. Além disso, o CloudFront pode ser usado para proteger sua aplicação contra **ataques na camada de aplicação (camada 7)**, como **ataques de negação de serviço** específicos para HTTP/HTTPS.
+
+### 📌 **Como Funciona**:
+- **Distribuição de tráfego**: O **CloudFront** ajuda a distribuir o tráfego de rede, o que **mitiga** o impacto de um ataque DDoS, **distribuindo a carga** entre múltiplos pontos de presença (PoPs).
+- **Proteção contra ataques na camada 7**: Ele pode bloquear tráfego **malicioso** baseado em **padrões HTTP** usando **regras personalizadas** de cache e **configuração de distribuição**.
+- **Caching**: O CloudFront também pode ajudar a **reduzir a pressão** no servidor de origem, armazenando em cache conteúdo estático e dinâmico.
+
+🔹 **Exemplo de Uso**:
+  - Se você tem uma aplicação web e deseja **minimizar o impacto** de ataques DDoS, pode usar o **CloudFront** para distribuir o tráfego e aplicar **restrições** e **limitações** de requisições (ex: rate limiting).
+
+### 🛠 **Passo a Passo - Usando CloudFront para Proteção**:
+1. **Criar uma Distribuição CloudFront**:
+   - Configure uma distribuição **CloudFront** com seu conteúdo da **origem (S3, EC2)**.
+   
+2. **Configurar Regras de Cache**:
+   - Adicione **regras personalizadas de cache** para garantir que o conteúdo estático seja distribuído eficientemente.
+   
+3. **Limitar Requisições HTTP/HTTPS**:
+   - Use **restrições** no tráfego para evitar sobrecarga e ataques.
+
+---
+
+## ✅ **3. AWS WAF para Bloquear Tráfego Malicioso**
+
+O **AWS WAF** (Web Application Firewall) é uma ferramenta para proteger suas aplicações web contra **tráfego malicioso** e **ataques em camada de aplicação** (camada 7). Ele permite que você crie regras específicas para **bloquear**, **permitir** ou **monitorar** tráfego HTTP(S) com base em diversos parâmetros.
+
+### 📌 **Principais Funcionalidades**:
+- **Filtragem de tráfego**: O WAF permite que você crie **regras** para bloquear tráfego **indesejado** ou **potencialmente malicioso**, como ataques de **SQL Injection**, **Cross-site scripting (XSS)**, e **bots maliciosos**.
+- **Listas de IPs permitidos/bloqueados**: Você pode criar **listas de controle de acesso** (IP ACLs) para permitir ou bloquear tráfego de endereços IP específicos.
+- **Proteção contra bots e crawlers**: O WAF pode detectar e bloquear **bots** que tentam explorar vulnerabilidades em sua aplicação web.
+
+🔹 **Exemplo de Uso**:
+  - Em um site de e-commerce, você pode usar o **AWS WAF** para bloquear tráfego de **IPs conhecidos de bots** ou **padrões de tráfego suspeitos**, como múltiplas tentativas de login falhas (indicando um **ataque de força bruta**).
+
+### 🛠 **Passo a Passo - Configurando o AWS WAF**:
+1. **Criar uma Web ACL**:
+   - No console do **AWS WAF**, crie uma **Web ACL** (Access Control List) que define as regras de segurança.
+   
+2. **Adicionar Regras**:
+   - Adicione **regras específicas** para bloquear ataques conhecidos (ex: SQL Injection, XSS, etc.).
+   
+3. **Aplicar a Web ACL**:
+   - Associe a **Web ACL** à sua distribuição **CloudFront** ou **API Gateway** para proteger sua aplicação web.
+
+---
+
+# 🚀 **Resumo Final**
+
+| 🔹 Recurso | ✅ Finalidade |
+|------------|-------------|
+| **AWS Shield Standard** | **Proteção básica contra DDoS** para todos os clientes da AWS. |
+| **AWS Shield Advanced** | **Proteção avançada** contra DDoS e **ataques em camada 7**, com suporte 24x7. |
+| **CloudFront** | **Proteção contra ataques na camada de aplicação**, distribuição de tráfego e cache de conteúdo. |
+| **AWS WAF** | **Bloqueio de tráfego malicioso** e proteção contra vulnerabilidades web (SQL Injection, XSS, etc.). |
+
+---
+
+🎯 **Esses recursos ajudam a proteger suas aplicações contra ataques DDoS e outras ameaças cibernéticas**, garantindo **disponibilidade**, **segurança** e **resiliência**.
