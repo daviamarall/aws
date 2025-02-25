@@ -552,4 +552,4 @@ aws rds create-db-instance \
 ✔ O **Banco de Dados** pode ser RDS, DynamoDB ou S3, dependendo do caso de uso.  
 ✔ A AWS oferece serviços como **Auto Scaling, Load Balancers e Security Groups** para garantir escalabilidade e segurança.  
 
----
+----
