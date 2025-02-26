@@ -1,4 +1,69 @@
 ## Domínio 2: Design de arquiteturas resilientes
+
+### Declaração de tarefa 2.1: Projetar arquiteturas dimensionáveis e com acoplamento fraco
+
+#### Conhecimento sobre:
+
+- Criação e gerenciamento de APIs (por exemplo, Amazon API Gateway, API REST).
+- AWS Managed Services com casos de uso apropriados (por exemplo, AWS Transfer Family, Amazon SQS, Secrets Manager).
+- Estratégias de armazenamento em cache.
+- Princípios de design para microsserviços (por exemplo, cargas de trabalho stateless em comparação com cargas de trabalho stateful).
+- Arquiteturas orientadas por eventos.
+- Scaling horizontal e vertical.
+- Como usar adequadamente os aceleradores de borda (por exemplo, rede de entrega de conteúdo [CDN]).
+- Como migrar aplicações para contêineres.
+- Conceitos de balanceamento de carga (por exemplo, Application Load Balancer).
+- Arquiteturas multicamadas.
+- Conceitos de enfileiramento e sistema de mensagens (por exemplo, publicar/assinar).
+- Tecnologias e padrões sem servidor (por exemplo, AWS Fargate, AWS Lambda).
+- Tipos de armazenamento com características associadas (por exemplo, objeto, arquivo, bloco).
+- Orquestração de contêineres (por exemplo, Amazon ECS, Amazon EKS).
+- Quando usar réplicas de leitura.
+- Orquestração de fluxo de trabalho (por exemplo, AWS Step Functions).
+
+#### Habilidades em:
+
+- Projetar arquiteturas orientadas por eventos, microsserviços e/ou multicamadas com base em requisitos.
+- Determinar estratégias de scaling para componentes usados em um projeto de arquitetura.
+- Determinar os serviços da AWS necessários para obter um acoplamento fraco com base em requisitos.
+- Determinar quando usar contêineres.
+- Determinar quando usar tecnologias e padrões sem servidor.
+- Recomendar tecnologias apropriadas de computação, armazenamento, redes e banco de dados com base em requisitos.
+- Usar serviços da AWS com propósito específico para cargas de trabalho.
+
+---
+
+### Declaração de tarefa 2.2: Projetar arquiteturas altamente disponíveis e/ou tolerantes a falhas
+
+#### Conhecimento sobre:
+
+- Infraestrutura global da AWS (por exemplo, Zonas de Disponibilidade, Regiões AWS, Amazon Route 53).
+- AWS Managed Services com casos de uso apropriados (por exemplo, Amazon Comprehend, Amazon Polly).
+- Conceitos básicos de redes (por exemplo, tabelas de rotas).
+- Estratégias de recuperação de desastres (DR) (por exemplo, backup e restauração, luz piloto, warm standby, failover ativo-ativo, objetivo de ponto de recuperação [RPO], objetivo de tempo de recuperação [RTO]).
+- Padrões de design distribuídos.
+- Estratégias de failover.
+- Infraestrutura imutável.
+- Conceitos de balanceamento de carga (por exemplo, Application Load Balancer).
+- Conceitos de proxy (por exemplo, Proxy do Amazon RDS).
+- Cotas de serviço e limitação de largura de banda (por exemplo, como configurar as cotas de serviço para uma carga de trabalho em um ambiente de standby).
+- Opções e características de armazenamento (por exemplo, durabilidade, replicação).
+- Visibilidade da carga de trabalho (por exemplo, AWS X-Ray).
+
+#### Habilidades em:
+
+- Determinar estratégias de automação para garantir a integridade da infraestrutura.
+- Determinar os serviços da AWS necessários para fornecer uma arquitetura altamente disponível e/ou tolerante a falhas nas Zonas de Disponibilidade ou Regiões AWS.
+- Identificar métricas com base nos requisitos empresariais para oferecer uma solução altamente disponível.
+- Implementar designs para mitigar pontos únicos de falha.
+- Implementar estratégias para garantir a durabilidade e a disponibilidade dos dados (por exemplo, backups).
+- Selecionar uma estratégia de DR apropriada para atender aos requisitos empresariais.
+- Usar serviços da AWS que melhoram a confiabilidade de aplicações legados e aplicações que não foram criadas para a nuvem (por exemplo, quando não é possível fazer alterações nas aplicações).
+- Usar serviços da AWS com propósito específico para cargas de trabalho.
+
+---
+
+## Domínio 2: Design de arquiteturas resilientes
 ### Declaração de tarefa 2.1: Projetar arquiteturas dimensionáveis e com acoplamento fraco.
 
 ### 📌 **Criação e Gerenciamento de APIs com Amazon API Gateway**  
