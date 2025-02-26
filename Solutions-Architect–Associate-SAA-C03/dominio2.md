@@ -553,3 +553,339 @@ aws rds create-db-instance \
 ✔ A AWS oferece serviços como **Auto Scaling, Load Balancers e Security Groups** para garantir escalabilidade e segurança.  
 
 ----
+
+## **📌 Como Migrar Aplicações para Contêineres?**
+Migrar uma aplicação tradicional (monolítica ou baseada em VMs) para **contêineres** melhora a **escalabilidade, portabilidade e eficiência**. A AWS oferece várias soluções para rodar contêineres, como **ECS, EKS e Fargate**.  
+
+---
+
+## **🔹 1. Etapas da Migração**
+### 🔍 **Passo 1: Analisar a Aplicação**
+Antes de migrar, identifique:  
+✅ **Dependências** → Banco de dados, serviços externos, APIs.  
+✅ **Estado da aplicação** → É **stateless** (sem persistência) ou **stateful** (precisa armazenar dados)?  
+✅ **Ambiente de execução** → Atualmente roda em VMs (EC2), Bare Metal ou outro ambiente?  
+
+💡 **Exemplo:**  
+- Uma API REST rodando em **Node.js** com banco de dados **PostgreSQL**.
+- Atualmente está em um **EC2**, mas queremos mover para **contêineres**.
+
+---
+
+### 🚀 **Passo 2: Containerizar a Aplicação**
+Agora, criamos um **Dockerfile** para empacotar a aplicação.
+
+📌 **Exemplo: Dockerfile para uma API Node.js**
+```dockerfile
+# Usando imagem oficial do Node.js
+FROM node:18-alpine
+
+# Definindo diretório de trabalho
+WORKDIR /app
+
+# Copiando arquivos da aplicação
+COPY package.json package-lock.json ./
+RUN npm install
+
+# Copiando código-fonte
+COPY . .
+
+# Expondo porta
+EXPOSE 3000
+
+# Comando de inicialização
+CMD ["node", "server.js"]
+```
+
+💡 **Testando o contêiner localmente:**
+```sh
+docker build -t minha-api .
+docker run -p 3000:3000 minha-api
+```
+
+---
+
+### 🔄 **Passo 3: Escolher um Serviço AWS para Rodar os Contêineres**
+A AWS oferece **três principais opções** para rodar contêineres:  
+
+1️⃣ **Amazon ECS (Elastic Container Service)** → Gerenciado pela AWS, mais fácil de configurar.  
+2️⃣ **Amazon EKS (Elastic Kubernetes Service)** → Kubernetes gerenciado, ideal para ambientes multi-cloud.  
+3️⃣ **AWS Fargate** → Sem necessidade de gerenciar servidores (serverless para contêineres).  
+
+🔹 **Comparação rápida**:
+| Serviço | Gerenciamento | Uso Principal |
+|---------|--------------|--------------|
+| **ECS** | Simples, AWS cuida da infraestrutura | Aplicações leves e fáceis de escalar |
+| **EKS** | Kubernetes gerenciado | Quando precisa de Kubernetes (EKS = Kubernetes as a Service) |
+| **Fargate** | Totalmente serverless | Quando não quer gerenciar servidores |
+
+---
+
+### 🏗 **Passo 4: Deploy na AWS**
+#### 📌 **Opção 1: Deploy no Amazon ECS com Fargate**
+Com o Fargate, não precisamos gerenciar servidores.
+
+1️⃣ **Criar um repositório no Amazon Elastic Container Registry (ECR)**:
+```sh
+aws ecr create-repository --repository-name minha-api
+```
+
+2️⃣ **Autenticar no ECR e enviar a imagem Docker**:
+```sh
+aws ecr get-login-password | docker login --username AWS --password-stdin <ID_DA_CONTA>.dkr.ecr.us-east-1.amazonaws.com
+
+docker tag minha-api <ID_DA_CONTA>.dkr.ecr.us-east-1.amazonaws.com/minha-api
+docker push <ID_DA_CONTA>.dkr.ecr.us-east-1.amazonaws.com/minha-api
+```
+
+3️⃣ **Criar um cluster ECS com Fargate**:
+```sh
+aws ecs create-cluster --cluster-name minha-api-cluster
+```
+
+4️⃣ **Criar uma task definition para rodar o contêiner**:
+```json
+{
+  "family": "minha-api-task",
+  "containerDefinitions": [
+    {
+      "name": "minha-api",
+      "image": "<ID_DA_CONTA>.dkr.ecr.us-east-1.amazonaws.com/minha-api",
+      "memory": 512,
+      "cpu": 256,
+      "essential": true
+    }
+  ],
+  "requiresCompatibilities": ["FARGATE"],
+  "networkMode": "awsvpc",
+  "cpu": "256",
+  "memory": "512",
+  "executionRoleArn": "arn:aws:iam::XXXXXXXXXX:role/ecsTaskExecutionRole"
+}
+```
+
+5️⃣ **Executar a tarefa no ECS**:
+```sh
+aws ecs run-task --cluster minha-api-cluster --task-definition minha-api-task
+```
+
+🔹 Agora, sua API está rodando em **Fargate + ECS**! 🚀  
+
+---
+
+## **🎯 Resumo**
+✔ **Containerizar a aplicação** com Docker.  
+✔ **Escolher um serviço AWS** → ECS, EKS ou Fargate.  
+✔ **Fazer deploy** com ECR + ECS.  
+✔ **Gerenciar escalabilidade e segurança** com AWS Load Balancer e IAM Roles.  
+
+---
+
+## **📌 Conceitos de Enfileiramento e Sistema de Mensagens (Pub/Sub) na AWS**
+
+### 🔹 O que é um Sistema de Mensagens?  
+Um **sistema de mensagens** permite que diferentes partes de uma aplicação **comuniquem-se de forma assíncrona**, melhorando **escalabilidade, desacoplamento e resiliência**. Na AWS, existem duas abordagens principais:
+
+1️⃣ **Fila de Mensagens (Enfileiramento - Point-to-Point)** → Exemplo: **Amazon SQS**  
+2️⃣ **Publicação/Assinatura (Pub/Sub - Broadcast)** → Exemplo: **Amazon SNS**  
+
+---
+
+## **📌 1. Enfileiramento com Amazon SQS (Simple Queue Service)**
+O **Amazon SQS** é um serviço de **fila de mensagens gerenciado**. Ele permite que aplicações enviem, armazenem e consumam mensagens de forma confiável.
+
+📌 **Cenário:**  
+Imagine que você tem um **sistema de pedidos** em um e-commerce. Quando um cliente faz um pedido, a API do e-commerce coloca a solicitação em uma fila, e um sistema de processamento de pedidos consome essas mensagens **assíncronamente**.
+
+### 🏗 **Fluxo de Funcionamento do SQS**
+1️⃣ **Produtor** → Envia uma mensagem para a fila.  
+2️⃣ **SQS** → Armazena a mensagem até que seja processada.  
+3️⃣ **Consumidor** → Lê a mensagem e a processa.  
+4️⃣ **Mensagem é removida** da fila após o processamento.  
+
+### 🔧 **Exemplo prático de SQS**
+Criando uma **fila SQS** na AWS CLI:
+```sh
+aws sqs create-queue --queue-name minha-fila
+```
+
+Enviando uma **mensagem para a fila**:
+```sh
+aws sqs send-message --queue-url https://sqs.us-east-1.amazonaws.com/1234567890/minha-fila \
+--message-body "Pedido #12345 - Cliente João"
+```
+
+Recebendo mensagens da fila:
+```sh
+aws sqs receive-message --queue-url https://sqs.us-east-1.amazonaws.com/1234567890/minha-fila
+```
+
+---
+
+## **📌 2. Publicação/Assinatura com Amazon SNS (Simple Notification Service)**
+O **Amazon SNS** permite um modelo **publicador/assinante (Pub/Sub)**, onde uma mensagem enviada para um **tópico** pode ser distribuída para vários assinantes ao mesmo tempo.
+
+📌 **Cenário:**  
+- Um sistema de monitoramento detecta um problema no banco de dados.  
+- Ele publica uma mensagem no **Amazon SNS**.  
+- O SNS envia essa mensagem para **vários assinantes**:  
+  🔹 **Email** do administrador.  
+  🔹 **SMS** para um celular de alerta.  
+  🔹 **Lambda Function** para acionar um processo automático.  
+
+### 🏗 **Fluxo de Funcionamento do SNS**
+1️⃣ **Publicador** → Envia uma mensagem para o **tópico SNS**.  
+2️⃣ **SNS** → Distribui a mensagem para todos os **assinantes** do tópico.  
+
+### 🔧 **Exemplo prático de SNS**
+Criando um **tópico SNS**:
+```sh
+aws sns create-topic --name alerta-sistema
+```
+
+Criando uma **assinatura (ex: email)**:
+```sh
+aws sns subscribe --topic-arn arn:aws:sns:us-east-1:1234567890:alerta-sistema \
+--protocol email --notification-endpoint meuemail@exemplo.com
+```
+
+Publicando uma mensagem para o tópico:
+```sh
+aws sns publish --topic-arn arn:aws:sns:us-east-1:1234567890:alerta-sistema \
+--message "Alerta! O banco de dados está sobrecarregado!"
+```
+
+📌 **Os assinantes do tópico (emails, SMS, Lambda, SQS) receberão a mensagem automaticamente!** 🚀  
+
+---
+
+## **📌 3. Quando Usar SQS vs SNS?**
+| Característica | Amazon SQS (Fila) | Amazon SNS (Pub/Sub) |
+|--------------|-----------------|------------------|
+| **Padrão** | Point-to-Point | Broadcast |
+| **Entrega** | Uma mensagem para um único consumidor | Uma mensagem para vários consumidores |
+| **Uso Ideal** | Processamento assíncrono, desacoplamento de serviços | Notificações, eventos, integração com múltiplos sistemas |
+
+💡 **Exemplo de Uso Combinado**  
+Podemos combinar **SNS + SQS** para distribuir mensagens de um **único publicador** para **múltiplas filas de processamento**!
+
+1️⃣ **O SNS publica um evento de novo pedido.**  
+2️⃣ **Duas filas SQS recebem a mensagem:**  
+   🔹 Fila A → Processa pagamento.  
+   🔹 Fila B → Atualiza o estoque.  
+
+📌 **Esse design melhora escalabilidade e desacoplamento!** 🚀  
+
+---
+
+## **🎯 Resumo**
+✔ **Amazon SQS** → Sistema de **fila de mensagens**, point-to-point, usado para processamentos assíncronos.  
+✔ **Amazon SNS** → Sistema **Pub/Sub**, onde uma mensagem é enviada para múltiplos assinantes ao mesmo tempo.  
+✔ **SQS + SNS** → Juntos, criam arquiteturas escaláveis e resilientes!  
+
+---
+
+## **📌 Tecnologias e Padrões Sem Servidor (Serverless) na AWS**  
+
+A **arquitetura serverless (sem servidor)** permite executar código **sem gerenciar servidores**. A AWS cuida automaticamente do provisionamento, escalabilidade e manutenção da infraestrutura.  
+
+Os principais serviços **serverless** na AWS são:  
+✔ **AWS Lambda** → Executa código sem necessidade de servidores.  
+✔ **AWS Fargate** → Permite rodar containers sem gerenciar servidores.  
+
+---
+
+## **1️⃣ AWS Lambda – Funções Serverless**  
+
+📌 **O que é?**  
+O **AWS Lambda** permite rodar **funções** em resposta a eventos sem precisar gerenciar servidores.  
+
+📌 **Casos de Uso:**  
+✅ Processamento de eventos de **S3, DynamoDB, API Gateway, CloudWatch**  
+✅ Automação de tarefas **(ex: backup, notificações, análise de logs)**  
+✅ Integração com outros serviços **AWS (ex: AWS Step Functions)**  
+
+### 🏗 **Como Funciona o AWS Lambda?**  
+1️⃣ **Trigger (Evento)** → Exemplo: Upload de um arquivo no **S3**.  
+2️⃣ **Execução da Função Lambda** → Exemplo: Processamento do arquivo.  
+3️⃣ **Saída** → Exemplo: Salvar dados processados no **DynamoDB**.  
+
+### 🔧 **Exemplo prático com AWS Lambda**
+Criando uma **função Lambda** na AWS CLI:
+```sh
+aws lambda create-function --function-name ProcessarPedido \
+--runtime python3.8 --role arn:aws:iam::1234567890:role/meu-role \
+--handler lambda_function.lambda_handler \
+--zip-file fileb://meuarquivo.zip
+```
+Invocando a função manualmente:
+```sh
+aws lambda invoke --function-name ProcessarPedido output.json
+```
+
+💡 **Vantagens do AWS Lambda**  
+✅ **Escala automática** → AWS escala de acordo com a demanda.  
+✅ **Modelo de pagamento por uso** → Cobra apenas pelo tempo de execução.  
+✅ **Sem necessidade de gerenciar servidores.**  
+
+---
+
+## **2️⃣ AWS Fargate – Containers Sem Servidor**  
+
+📌 **O que é?**  
+O **AWS Fargate** permite rodar **containers Docker** sem precisar gerenciar instâncias EC2.  
+
+📌 **Casos de Uso:**  
+✅ Execução de **containers em ECS ou EKS** sem provisionar infraestrutura.  
+✅ Aplicações **event-driven**, como **processamento de jobs**.  
+✅ Workloads de **curta duração**, como análise de dados e CI/CD.  
+
+### 🏗 **Como Funciona o AWS Fargate?**  
+1️⃣ **Cria-se uma Task Definition no ECS/EKS**  
+2️⃣ **O Fargate gerencia a execução do container**  
+3️⃣ **O container escala automaticamente conforme a demanda**  
+
+### 🔧 **Exemplo prático com AWS Fargate**
+Criando um cluster ECS para rodar containers no Fargate:
+```sh
+aws ecs create-cluster --cluster-name meu-cluster
+```
+Criando uma definição de tarefa para um container:
+```sh
+aws ecs register-task-definition \
+    --family minha-tarefa \
+    --network-mode awsvpc \
+    --requires-compatibilities FARGATE \
+    --cpu "256" --memory "512" \
+    --container-definitions '[{"name":"meu-container","image":"nginx","essential":true}]'
+```
+Rodando um container no Fargate:
+```sh
+aws ecs run-task --cluster meu-cluster --task-definition minha-tarefa
+```
+
+💡 **Vantagens do AWS Fargate**  
+✅ **Gerencia a infraestrutura automaticamente**  
+✅ **Escala sob demanda**  
+✅ **Sem necessidade de gerenciar instâncias EC2**  
+
+---
+
+## **📊 AWS Lambda vs AWS Fargate – Quando Usar Cada Um?**
+| Característica | AWS Lambda | AWS Fargate |
+|--------------|------------|------------|
+| **Execução** | Código serverless (funções) | Containers sem servidor |
+| **Duração da Execução** | Máximo de 15 minutos | Execução contínua |
+| **Casos de Uso** | Eventos, ETL, APIs, automação | Microsserviços, aplicações containerizadas |
+| **Provisionamento** | Zero servidores, escalabilidade automática | Containers gerenciados |
+
+📌 **Lambda é melhor para código simples e event-driven, enquanto Fargate é ideal para workloads mais complexos e stateful.**  
+
+---
+
+## **🎯 Resumo**
+✔ **AWS Lambda** → Executa código sem servidores, ideal para eventos e funções rápidas.  
+✔ **AWS Fargate** → Roda containers sem EC2, ideal para microsserviços e workloads maiores.  
+✔ **Ambos são serverless**, eliminando a necessidade de gerenciar infraestrutura!  
+
+---
