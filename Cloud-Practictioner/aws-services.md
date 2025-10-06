@@ -157,7 +157,8 @@ Implanta aplicações web.
   NoSQL compatível com Mongo, BD de documentos JSON, nativo, gerenciado, econômico.
   
 - EFS 💾
-
+  É um serviço da AWS que fornece armazenamento de arquivos escalável e totalmente gerenciado 
+  
 ### Migração e transferência de dados
 
 - AWS Database Migration Service (AWS DMS) 🌐
