@@ -1,7 +1,4 @@
-Claro! 😊
-O **EBS (Elastic Block Store)** é um dos principais serviços de **armazenamento em bloco** da **AWS (Amazon Web Services)**, usado principalmente junto com instâncias **EC2**. Abaixo está um resumo completo — mas direto — sobre o **Amazon EBS**:
 
----
 
 ## 🧩 O que é o EBS?
 
