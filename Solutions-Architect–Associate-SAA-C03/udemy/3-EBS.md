@@ -72,3 +72,7 @@ Se você precisa:
 
 ---
 
+Fontes: 
+
+https://docs.aws.amazon.com/pt_br/ebs/latest/userguide/ebs-ug.pdf
+
