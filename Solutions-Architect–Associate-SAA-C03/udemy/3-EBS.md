@@ -51,6 +51,8 @@ Você paga por:
 * **Snapshots armazenados no S3**
 * **Transferência de dados entre AZs (se houver)**
 
+https://aws.amazon.com/pt/ebs/pricing/
+
 ---
 
 ## 🧠 Exemplos de uso
