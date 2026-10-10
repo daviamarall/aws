@@ -1,29 +1,22 @@
-# Repositório de Estudos AWS
+# AWS — Anotações e laboratórios de estudo
 
-Este repositório contém exemplos e materiais de estudo relacionados à Amazon Web Services (AWS). Aqui você encontrará amostras de código, tutoriais e informações úteis para aprender e aprimorar suas habilidades na utilização dos serviços da AWS.
+Material de estudo sobre **Amazon Web Services (AWS)**: fundamentos, arquitetura de soluções, serviços e linha de comando.
 
-## Como Contribuir
+## 📚 Conteúdo
 
-Se você quiser contribuir para este repositório, sinta-se à vontade para fazer um fork e enviar suas melhorias. Você também pode abrir issues para relatar problemas ou sugerir novas ideias de conteúdo.
+- `Cloud-Practictioner/` — anotações do exame **Cloud Practitioner**
+- `Solutions-Architect-Associate-SAA-C03/` — anotações do **Solutions Architect Associate (SAA-C03)**
+- `aws-cli/` — comandos úteis da **AWS CLI**
+- `Projetos drawio/` — diagramas de arquitetura
 
-Para contribuir, siga estas etapas:
+## 🎯 Temas abordados
 
-1. Faça um fork do repositório.
-2. Crie uma nova branch para suas alterações: `git checkout -b minha-nova-feature`.
-3. Faça as alterações desejadas e adicione os arquivos modificados: `git add .`.
-4. Faça o commit das alterações: `git commit -m "Adiciona nova feature"`.
-5. Envie as alterações para o seu repositório fork: `git push origin minha-nova-feature`.
-6. Abra um pull request neste repositório original para revisão e inclusão das suas alterações.
+Fundamentos de cloud · redes e conectividade · armazenamento (S3) · bancos de dados (RDS) · EC2 · balanceamento e escalabilidade · DNS (Route 53) · contêineres e serverless · monitoramento e governança · segurança e criptografia.
 
-## Recursos Externos
+## 🔗 Referências
 
-Aqui estão alguns recursos externos úteis para aprender mais sobre a AWS:
+- [AWS Documentation](https://docs.aws.amazon.com/)
+- [AWS Training and Certification](https://aws.amazon.com/training/)
+- [AWS CLI Reference](https://docs.aws.amazon.com/cli/)
 
-- [AWS Documentation](https://docs.aws.amazon.com/): Documentação oficial da AWS, com guias e referências detalhadas.
-- [AWS Training and Certification](https://aws.amazon.com/training/): Cursos, treinamentos e certificações oficiais da AWS.
-- [AWS YouTube Channel](https://www.youtube.com/user/AmazonWebServices): Canal oficial da AWS no YouTube, com vídeos e apresentações sobre os serviços e soluções.
-
-## Licença
-
-Este repositório está licenciado sob a licença [MIT](LICENSE). Sinta-se à vontade para utilizar o conteúdo aqui disponibilizado de acordo com os termos da licença.
-
+> Repositório de **estudos**, parte do meu portfólio de **DevOps / Cloud**. Veja também [terraform-lab](https://github.com/daviamarall/terraform-lab).
